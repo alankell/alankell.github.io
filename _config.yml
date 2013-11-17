@@ -5,7 +5,8 @@ pygments: true
 paginate: 8
 permalink: /:title
 
-title: Alan_kell.com
+title: Alan_kell
 url: http://alankell.github.io
 feed: /atom.xml
 author_info: <a href="http://alankell.github.io/">Alan_kell</a>
+production_url : http://alankell.github.io
