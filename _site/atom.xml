@@ -4,7 +4,7 @@
    <title>Alan_kell</title>
    <link href="http://alankell.github.io/atom.xml" rel="self" type="application/atom+xml"/>
    <link href="http://alankell.github.io" rel="alternate" type="text/html" />
-   <updated>2013-11-19T20:53:28+08:00</updated>
+   <updated>2013-11-25T19:15:50+08:00</updated>
    <id>http://alankell.github.io</id>
    <author>
      <name></name>
@@ -19,25 +19,25 @@
      <id>http://http://alankell.github.io/keeping</id>
      <content type="html">&lt;h2&gt;Good is not Enough&lt;/h2&gt;
 
-&lt;p&gt;这个时代是属于偏执狂的，正如乔布斯那样.如果做事情总是一味地迁就，不能精益求精总归是走不长的，
-时代决定了我们的需求，现代社会物质上我们什么也不缺，馒头面包我们都有，我们追求的是品质，人们需
+&lt;p&gt;这个时代是属于偏执狂的，正如乔布斯那样.做事情总是一味地迁就，不能精益求精总归是走不长的，
+时代决定了我们的需求，现代社会我们什么也不缺物质，馒头面包我们都有，我们追求的是品质，人们需
 要更加人性化更智能的产品和更高质量的物质享受和精神享受，所以对于我们做技术的如果只满足于实现
 某个功能就OK是肯定成不了大事的，我们需要追求完美。好吧，虽然我不信星座，但身为处女座的我从小
 到大的确有点完美主义，而且还有点轻微的洁癖，那些攻击处女座的可以来喷了... ~_~!&lt;/p&gt;
 
 &lt;h2&gt;利用Jekyll搭建github Blog&lt;/h2&gt;
 
-&lt;p&gt;其实一直想搭建一个个人blog,正如大家说的那样为了像黑客一样写博客，之前也用&lt;a href=&quot;https://ghost.org/&quot;&gt;Ghost&lt;/a&gt;搭建过一个，它是基于node.js的一个bloging platform,那个相对简单，简单的模板都已经写好，当时就很快弄了一个，并且网上弄了一个免费的VPS，可是免费的终归是不靠谱，总是掉，别且有次数据丢失，虽然那个平台很好，很简洁很漂亮，但是作为一个买不起VPS的穷学生来说，也就丢弃了。&lt;/p&gt;
+&lt;p&gt;其实一直想搭建一个个人blog,首先我比较崇尚极简主义，不喜欢乱七八糟的广告和插件，其次一些博客网站的排版和字体并不能满足我这方面有洁癖的要求，jekyll用的是markdown转静态页面，英文字体还算过得去，中文字体在后期我还是得再加强一下。之前也用&lt;a href=&quot;https://ghost.org/&quot;&gt;Ghost&lt;/a&gt;搭建过一个，它是基于node.js的一个bloging platform,那个相对简单，简单的模板都已经写好，当时就很快弄了一个，并且网上弄了一个免费的VPS，可是免费的终归是不靠谱，总是掉，别且有次数据丢失，虽然那个平台很好，很简洁很漂亮，但是作为一个买不起VPS的穷学生来说，也就丢弃了。&lt;/p&gt;
 
-&lt;p&gt;github page也是很早就知道的，网上教程也很多，为什么没有动手开干？也是因为担心其访问速度太蜗牛，因为这个毕竟是外国的网站的，后来发现身边的很多人都用github page当博客，并且速度真心还可以，于是经不住诱惑，也弄了一个，目前这个模板还是我copy &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;BeiYuu&lt;/a&gt;的，仅做了不多的修改，因为现在js的基础还是没有，亲手操还是有点困难
-，不过我正在准备进行改版，相信不久就会有一个更简洁更具人文情怀的blog诞生。&lt;/p&gt;
+&lt;p&gt;github pages也是很早就知道的，为什么没有动手开干？也是因为担心其访问速度太蜗牛，因为这个毕竟是外国的网站的，后来发现身边的很多人都用github pages当博客，并且速度真心还可以，于是经不住诱惑，也弄了一个，目前这个模板仅做了不多的修改，现在也在孕育下一个改版，相信不久就会有一个更简洁更具人文情怀的blog诞生。&lt;/p&gt;
 
-&lt;p&gt;虽然整个搭建过程很清晰，但是中间还是出现了很多的小问题，比如ruby安装好之后，install jekyll的时候，由于天朝的网络的原因，多次尝试才成功。&lt;/p&gt;
+&lt;p&gt;虽然整个搭建过程很清晰，但是中间还是出现了很多的小问题，坑爹的ruby安装好之后，install jekyll的时候，由于天朝的网络的原因，多次尝试才成功，对那个武汉大学流氓教授真是无语，弄什么不好弄防火墙。。。&lt;/p&gt;
 
-&lt;h3&gt;1.安装jekyll&lt;/h3&gt;
+&lt;h3&gt;1.安装&lt;a href=&quot;http://jekyllrb.com/&quot;&gt;jekyll&lt;/a&gt;&lt;/h3&gt;
 
 &lt;pre class=&quot;prettify&quot;&gt;
-    gem install jekyll&lt;/pre&gt;
+    gem install jekyll
+&lt;/pre&gt;
 
 
 &lt;h3&gt;2.用Jekyll构建基于bootstrap模板&lt;/h3&gt;
@@ -45,14 +45,16 @@
 &lt;pre class=&quot;prettify&quot;&gt;
 $ git clone https://github.com/plusjade/jekyll-bootstrap.git
 $ cd jekyll-bootstrap
-$ jekyll --server&lt;/pre&gt;
+$ jekyll --server
+&lt;/pre&gt;
 
 
 &lt;p&gt;接下就可以在浏览器中预览啦http://localhost:4000/&lt;/p&gt;
 
 &lt;h3&gt;3.enjoy&lt;/h3&gt;
 
-&lt;p&gt;不过我用的不是这个模板，而是BeiYuu的，所以当时本地调试的时候也是遇到了很多的问题，不过一路斩荆棘下来还是学到了不少，可是我忘了全程记录下来了，所以现在也不能全部分享给大家了，BeiYuu在他博客上提到的一个问题“放在根目录下面的blog.md等文件，在GitHub的pages服务上一切正常，可以通过beiyuu.com/blog访问的到，但是在本地环境下，总是not found，很是让人郁闷，看生成的_site目录下面的文件，也是正常的blog.html，但就是找不到，只有当我把URL改为localhost:4000/blog.html的时候，才能访问的到，环境不同真糟糕。”其实我也遇到，但是我发现只要commit post以后，关闭jekyll serve再重启以后，本地访问就会出现了，我想这应该是一个实时更新的一个问题。&lt;/p&gt;
+&lt;p&gt;不过我用的不是这个简单的自模板，所以当时本地调试的时候也是遇到了很多的问题，不过一路斩荆棘下来还是学到了不少，但是当时我没有全程记录，
+所以现在也不能全部分享给大家了，BeiYu在他博客上提到的一个问题“放在根目录下面的blog.md等文件，在GitHub的pages服务上一切正常，但是在本地环境下，总是not found，很是让人郁闷，看生成的_site目录下面的文件，也是正常的blog.html，但就是找不到，只有当我把URL改为localhost:4000/blog.html的时候，才能访问的到，环境不同真糟糕。”其实我也遇到，但是我发现只要commit post以后，关闭jekyll serve再重启以后，本地访问就会出现了，我想这应该是一个实时更新的一个问题。&lt;/p&gt;
 
 &lt;h3&gt;4.Jekyll基本结构&lt;/h3&gt;
 
@@ -76,7 +78,7 @@ $ jekyll --server&lt;/pre&gt;
 
 &lt;h2&gt;心得&lt;/h2&gt;
 
-&lt;p&gt;要做好一个东西还是得学会geek，好好折腾啊，git是一个好东西，我从用了linux之后才深刻体会到 命令行的方便，Git Bash也是用命令行操作的，发现其强大及便捷太适合码农们了，
+&lt;p&gt;要做好一个东西还是得学会hack，好好折腾啊，git是一个好东西，我从用了linux之后才深刻体会到 命令行的方便，Git Bash也是用命令行操作的，发现其强大及便捷太适合码农们了，
 下面一张图可以让你快速了解git操作了（右键另存为吧  哈哈~）&lt;img src=&quot;/images/githubpages/git.png&quot; alt=&quot;Git&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;不早了，下次再扯了，晚安！&lt;/p&gt;
@@ -88,7 +90,7 @@ $ jekyll --server&lt;/pre&gt;
      <link href="http://alankell.github.io/first-blog"/>
      <updated>2013-11-17T00:00:00+08:00</updated>
      <id>http://http://alankell.github.io/first-blog</id>
-     <content type="html">&lt;h2&gt;写博客是件很酷的事情。&lt;/h2&gt;
+     <content type="html">&lt;h2&gt;The World Belongs to the Makers&lt;/h2&gt;
 </content>
    </entry>
    
