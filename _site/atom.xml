@@ -4,13 +4,31 @@
    <title>Alan_kell</title>
    <link href="http://alankell.github.io/atom.xml" rel="self" type="application/atom+xml"/>
    <link href="http://alankell.github.io" rel="alternate" type="text/html" />
-   <updated>2013-11-26T16:32:13+08:00</updated>
+   <updated>2013-12-07T12:30:58+08:00</updated>
    <id>http://alankell.github.io</id>
    <author>
      <name></name>
      <email></email>
    </author>
 
+   
+   <entry>
+     <title>淘宝技术这十年</title>
+     <link href="http://alankell.github.io/taobao"/>
+     <updated>2013-12-07T00:00:00+08:00</updated>
+     <id>http://http://alankell.github.io/taobao</id>
+     <content type="html">&lt;p&gt;　　初拿到这本书的时候，我大致浏览了一下，发现这里面的内容还是很有价值的，于是我想花一整块时间来好好研读。经过一个晚上的时间精度，发现，果不其然，这是一本好书，虽然前面的技术板块还是有很多不是很懂的，大量的专业名词不得不借用google，一路下来对淘宝的TFS（taobao file system）很好奇，但是由于技术的门槛，深究下去也有很大的难度，后来google的时候发现在同期腾讯也做了一个TFS（tencent file system），国内的这两大IT巨头，都做了自己的文件系统，这是这个信息时代发展的必然。随着大数据时代的来临，海量数据的存储和计算，使得一个系统发展到10亿流量的级别，你不得不做技术创新来满足现实中的需求。&lt;/p&gt;
+
+&lt;p&gt;　　对于淘宝从初期的土鳖时代发展到现在的黄金时代，我也深刻地意识到，一个好的架构真的不是一触而就的，而是需要不断的升级和重构，比如初期，淘宝选择LAMP web 服务器架构，这也是可以理解的，因为刚起步，对并发量的要求并不需要很高，Apache的性能足以满足用户请求的需求，杀鸡用牛刀的法子真的没多大必要。但是随着用户量的暴增，就不得不升级架构了，Mysql到Oracle数据的转变，Apache到Nginx的转变成为必然，当然这之中的升级也并不是那么容易，因为不能升级期间让系统停掉，这样必然会引起用户的抱怨和不满，这中间运用的技术不由得我佩服得五体投地。并且我相信淘宝的服务器的架构图必然是多层的，比如下面这个：
+&lt;img src=&quot;https://dl.dropboxusercontent.com/u/36894032/LAPM.jpg&quot; alt=&quot;lamp&quot; /&gt;
+　　&lt;/p&gt;
+
+&lt;p&gt;　　
+然后，对于前端这块也是我最感兴趣的，现在硬件和浏览器的进步都是突飞猛进，对于网页的要求必然越来越高，传统的静态页面肯定是满足不了大众的，但是要实现绚丽的交互效果，加载的资源必然大幅增加，浏览器在同一域名下并发加载的资源数量是有限的，比如现在领先的chrome也就一般是4-6个，但是访问一次淘宝首页需要加载上百个资源，那么如此小的并发量必然会加载很久，所以作为前端开发人员要想突破这个限制，往往将这些文件分布在多个域名下，这就绕过浏览器的这个限制，这种小招互联网时代很常见，需要我们好好去积累。并且作为一个前端开发者，并不是只了解前端开发就够了，我们需要了解与服务器端怎么连接，SEO等等。&lt;/p&gt;
+
+&lt;p&gt;　　前面那么多的名词让人很头大，后面的访谈让我感触很深，没有一个牛逼的人不是从苦逼走过来的，我们只有不断地去犯错，不断地碰壁，才能积累经验，领悟技术的真谛。人一生当中最重要的就是找到自己感兴趣的东西，然后坚持下去，追求自己喜欢的东西，再苦再累也不会为此感到后悔的。记得一年之前，我的一位导师这样跟我们说“至此，我对我能这样度过前半生感到无比的欣慰，因为我掌握了一门乐器，擅长一项运动，并且在自己喜欢的领域做研究，我觉得我是无憾了。” 想到这，我不禁黯然发笑，我是不是也应该为自己庆幸一下呢，哈哈，运动的话乒乓球也是我从小到大坚持的，现在也算是擅长的了，乐器的话，小时候也接触很多，笛子，口琴，后来是练起了吉他，虽然不算精通，但是拿出来装个逼还是可以的，:)  然后前端开发这块，热情也是时常爆表，憧憬只增不减，keep going！&lt;/p&gt;
+</content>
+   </entry>
    
    <entry>
      <title>生命不息，折腾不止</title>
@@ -86,11 +104,105 @@ $ jekyll --server
    </entry>
    
    <entry>
-     <title>first blog</title>
-     <link href="http://alankell.github.io/first-blog"/>
-     <updated>2013-11-17T00:00:00+08:00</updated>
-     <id>http://http://alankell.github.io/first-blog</id>
-     <content type="html">&lt;h2&gt;The World Belongs to the Makers&lt;/h2&gt;
+     <title>辉火</title>
+     <link href="http://alankell.github.io/huihuo"/>
+     <updated>2010-06-08T00:00:00+08:00</updated>
+     <id>http://http://alankell.github.io/huihuo</id>
+     <content type="html">&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/36894032/huihuo.jpg&quot; alt=&quot;huihuo&quot; /&gt;&lt;/p&gt;
+
+&lt;center&gt;
+他是孤傲的,
+&lt;br /&gt;&lt;br /&gt;
+
+在他的眼里
+
+&lt;br /&gt;&lt;br /&gt;
+除了冥王所有的一切都是虚无,
+
+&lt;br /&gt;&lt;br /&gt;
+燃烧灵魂，
+&lt;br /&gt;
+&lt;br /&gt;
+得到的是忘记过去的邪恶
+&lt;br /&gt;
+&lt;br /&gt;
+只为舍弃那颗曾经做为人类的心灵！
+&lt;br /&gt;
+&lt;br /&gt;
+黑炎漫天，
+&lt;br /&gt;
+&lt;br /&gt;
+这就是你的生存之道啊！
+&lt;br /&gt;
+&lt;br /&gt;
+烧尽一切，
+&lt;br /&gt;
+&lt;br /&gt;
+这就是你的战斗理念啊！
+&lt;br /&gt;
+&lt;br /&gt;
+曾经那宽容的笑脸没有让你醒悔，
+&lt;br /&gt;
+&lt;br /&gt;
+曾经那悲伤的内心不曾使你动心，
+&lt;br /&gt;
+&lt;br /&gt;
+你就是你，没有人能动摇你！
+&lt;br /&gt;
+&lt;br /&gt;
+这就是贝努鸟吗？
+&lt;br /&gt;
+&lt;br /&gt;
+忘不了那一战，
+&lt;br /&gt;
+&lt;br /&gt;
+一场没有退路，一飞冲天的战斗，
+&lt;br /&gt;
+&lt;br /&gt;
+你终于醒悟到了！
+&lt;br /&gt;
+&lt;br /&gt;
+只有守护自己要守护的东西，
+&lt;br /&gt;
+&lt;br /&gt;
+才能让自己完美的蜕变！
+&lt;br /&gt;
+&lt;br /&gt;
+你终于明白了，
+&lt;br /&gt;
+&lt;br /&gt;
+战斗的最终目的，
+&lt;br /&gt;
+&lt;br /&gt;
+不为自己，
+&lt;br /&gt;
+&lt;br /&gt;
+只是为了保护自己重要的人！
+&lt;br /&gt;
+&lt;br /&gt;
+黑炎变色了......
+&lt;br /&gt;
+&lt;br /&gt;
+你感叹了自己的命运，
+&lt;br /&gt;
+&lt;br /&gt;
+是的，作为战士
+&lt;br /&gt;
+&lt;br /&gt;
+这样的觉悟不晚！
+&lt;br /&gt;
+&lt;br /&gt;
+当你飞向太阳彼端时，
+&lt;br /&gt;
+&lt;br /&gt;
+圣的历史不会将你忘记！
+&lt;br /&gt;
+&lt;br /&gt;
+火凤凰中将还会归来！
+&lt;/center&gt;
+
+
+
 </content>
    </entry>
    
