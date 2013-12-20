@@ -46,7 +46,7 @@ input,select,li{vertical-align:middle;}
 
 
 #box1 div, #box2 div { display:inline-block; 
- width:32%;
+ width:34%;
  margin-left: -8%;
  padding:0px;
 }
@@ -87,7 +87,7 @@ margin-left: 50px;
 }
 
 .spanstyle{
-    padding-left: 62px; 
+    padding-left: 64px; 
     font-size: 14px;
 }
 
