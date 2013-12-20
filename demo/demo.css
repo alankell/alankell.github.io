@@ -1,30 +1,36 @@
 .head{
-	background-color: yellow;
+    background-color: yellow;
 }
-
+body{width:100%;font-family:"Microsoft YaHei",Helvetica,Arial,sans-serif;font-size:16px;color:#323232}
 div a { 
-	    text-decoration:none;
+        text-decoration:none;
         font-size: 15px;
    }
 
 .navi ul li{color: #FFA900;
- 	display: inline-block;}
-
-
-.navi{
-    margin-left: -30px;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
 }
 
+@media screen and (max-width: 320px){}
+.navi{
+    margin-left: -40px;
+    width:300px; 
+}
+
+#search-1{width: 40%;}
 input,select,li{vertical-align:middle;}
 
 
 #box{box-pack:center;
-	 display:-moz-box;
+     display:-moz-box;
      display:-webkit-box;
      display : box;
      box-orient: vertical;
      -mozbox-box-orient: vertical;
      -webkit-box-orient:vertical;
+     width: 300px;
  
 }
 
@@ -34,20 +40,32 @@ input,select,li{vertical-align:middle;}
 }
 #box2{
     box-flex: 1;
+    margin-bottom: 10px;
 }
 
 
 
 #box1 div, #box2 div { display:inline-block; 
- width:120px;}
+ width:30%;
+ margin-left: -5%;
+ padding:0px;
+}
+
+.town a,.towns a{
+    font-size:3px;
+
+}
+
 
 #box3 div{
     display: inline-block;
-    width: 52px;
-    height: 40px;
+    width: 9%;
+    height: 13%;
     vertical-align: middle;
     margin-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 1%;
 
 
 }
@@ -55,10 +73,12 @@ input,select,li{vertical-align:middle;}
 
 #box4 div{
     display: inline-block;
-    height: 40px;
-    width: 128px;
+    height: 13%;
+    width: 27%;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 1%;
 }
 img{ 
 max-width:50%;height:auto; 
@@ -67,11 +87,12 @@ margin-left: 50px;
 }
 
 .spanstyle{
-    padding-left: 66px; 
+    padding-left: 58px; 
+    font-size: 10px;
 }
 
 
-.town{margin-left: 60px;
+.town{margin-left: 100px;
     background-color: #E1DCD7;
     padding-left:10px; 
     padding-right: 10px;
@@ -95,6 +116,8 @@ margin-left: 50px;
 }
 
 .footset{
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: -5px;
+    margin-right: 0px;
+
 }
+
