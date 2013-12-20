@@ -16,7 +16,7 @@ div a {
 @media screen and (max-width: 320px){}
 .navi{
     margin-left: -35px;
-    width:320px; 
+    width:350px; 
 }
 
 
@@ -30,7 +30,7 @@ input,select,li{vertical-align:middle;}
      box-orient: vertical;
      -mozbox-box-orient: vertical;
      -webkit-box-orient:vertical;
-     width: 320px;
+     width: 350px;
  
 }
 
@@ -59,7 +59,7 @@ input,select,li{vertical-align:middle;}
 
 #box3 div{
     display: inline-block;
-    width: 10.2%;
+    width: 10.5%;
     height: 13%;
     vertical-align: middle;
     margin-bottom: 10px;
