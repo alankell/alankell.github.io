@@ -15,11 +15,11 @@ div a {
 
 @media screen and (max-width: 320px){}
 .navi{
-    margin-left: -40px;
-    width:300px; 
+    margin-left: -35px;
+    width:320px; 
 }
 
-#search-1{width: 40%;}
+
 input,select,li{vertical-align:middle;}
 
 
@@ -30,7 +30,7 @@ input,select,li{vertical-align:middle;}
      box-orient: vertical;
      -mozbox-box-orient: vertical;
      -webkit-box-orient:vertical;
-     width: 300px;
+     width: 320px;
  
 }
 
@@ -46,20 +46,20 @@ input,select,li{vertical-align:middle;}
 
 
 #box1 div, #box2 div { display:inline-block; 
- width:30%;
- margin-left: -5%;
+ width:32%;
+ margin-left: -8%;
  padding:0px;
 }
 
 .town a,.towns a{
-    font-size:3px;
+    font-size:14px;
 
 }
 
 
 #box3 div{
     display: inline-block;
-    width: 9%;
+    width: 10.2%;
     height: 13%;
     vertical-align: middle;
     margin-bottom: 10px;
@@ -74,7 +74,7 @@ input,select,li{vertical-align:middle;}
 #box4 div{
     display: inline-block;
     height: 13%;
-    width: 27%;
+    width: 29%;
     text-align: center;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -88,7 +88,7 @@ margin-left: 50px;
 
 .spanstyle{
     padding-left: 58px; 
-    font-size: 10px;
+    font-size: 14px;
 }
 
 
@@ -116,8 +116,8 @@ margin-left: 50px;
 }
 
 .footset{
-    margin-left: -5px;
-    margin-right: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
 
 }
 
