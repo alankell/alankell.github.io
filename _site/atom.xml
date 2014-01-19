@@ -4,13 +4,231 @@
    <title>Alan_kell</title>
    <link href="http://alankell.github.io/atom.xml" rel="self" type="application/atom+xml"/>
    <link href="http://alankell.github.io" rel="alternate" type="text/html" />
-   <updated>2013-12-26T22:30:15+08:00</updated>
+   <updated>2014-01-19T22:37:16+08:00</updated>
    <id>http://alankell.github.io</id>
    <author>
      <name></name>
      <email></email>
    </author>
 
+   
+   <entry>
+     <title>HTML-embed(摘要)</title>
+     <link href="http://alankell.github.io/embed"/>
+     <updated>2014-01-19T00:00:00+08:00</updated>
+     <id>http://http://alankell.github.io/embed</id>
+     <content type="html">&lt;h2&gt;Embed&lt;/h2&gt;
+
+&lt;h3&gt;（一）、基本语法：&lt;/h3&gt;
+
+&lt;p&gt;embed src=url
+说明：embed可以用来插入各种多媒体，格式可以是 Midi、Wav、AIFF、AU、MP3等等，
+      Netscape及新版的IE 都支持。url为音频或视频文件及其路径，可以是相对路径或绝对路径。
+示例：&lt;/p&gt;
+
+&lt;pre class=&quot;prettify&quot;&gt;
+embed src=&quot;your.mid&quot;
+&lt;/pre&gt;
+
+
+&lt;h3&gt;（二）、属性设置：&lt;/h3&gt;
+
+&lt;p&gt;1、自动播放：&lt;/p&gt;
+
+&lt;p&gt;语法：autostart=true、false
+说明：该属性规定音频或视频文件是否在下载完之后就自动播放。
+true：音乐文件在下载完之后自动播放；
+false：音乐文件在下载完之后不自动播放。
+示例：&lt;/p&gt;
+
+&lt;pre class=&quot;prettify&quot;&gt;
+embed src=&quot;your.mid&quot; autostart=true
+embed src=&quot;your.mid&quot; autostart=false
+&lt;/pre&gt;
+
+
+&lt;p&gt;2、循环播放：&lt;/p&gt;
+
+&lt;p&gt;语法：loop=正整数、true、false
+说明：该属性规定音频或视频文件是否循环及循环次数。
+属性值为正整数值时，音频或视频文件的循环次数与正整数值相同；
+属性值为true时，音频或视频文件循环；
+属性值为false时，音频或视频文件不循环。
+示例：&lt;/p&gt;
+
+&lt;pre class=&quot;prettify&quot;&gt;
+embed src=&quot;your.mid&quot; autostart=true loop=2
+embed src=&quot;your.mid&quot; autostart=true loop=true
+embed src=&quot;your.mid&quot; autostart=true loop=false
+&lt;/pre&gt;
+
+
+&lt;p&gt;3、面板显示：&lt;/p&gt;
+
+&lt;p&gt;语法：hidden=ture、no
+说明：该属性规定控制面板是否显示，默认值为no。
+ture：隐藏面板；
+no：显示面板。
+示例：&lt;/p&gt;
+
+&lt;pre class=&quot;prettify&quot;&gt;
+embed src=&quot;your.mid&quot; hidden=ture
+embed src=&quot;your.mid&quot; hidden=no
+&lt;/pre&gt;
+
+
+&lt;p&gt;4、开始时间：&lt;/p&gt;
+
+&lt;p&gt;语法：starttime=mm:ss（分：秒）
+说明：该属性规定音频或视频文件开始播放的时间。未定义则从文件开头播放。
+示例：&lt;/p&gt;
+
+&lt;pre class=&quot;prettify&quot;&gt;
+embed src=&quot;your.mid&quot; starttime=&quot;00:10&quot;
+&lt;/pre&gt;
+
+
+&lt;p&gt;5、音量大小：&lt;/p&gt;
+
+&lt;p&gt;语法：volume=0-100之间的整数
+说明：该属性规定音频或视频文件的音量大小。未定义则使用系统本身的设定。
+示例：&lt;/p&gt;
+
+&lt;pre class=&quot;prettify&quot;&gt;
+embed src=&quot;your.mid&quot; volume=&quot;10&quot;
+&lt;/pre&gt;
+
+
+&lt;p&gt;6、容器属性：&lt;/p&gt;
+
+&lt;p&gt;语法：height=# width=#
+说明：取值为正整数或百分数，单位为像素。该属性规定控制面板的高度和宽度。
+height：控制面板的高度；
+width：控制面板的宽度。
+示例：&lt;/p&gt;
+
+&lt;pre class=&quot;prettify&quot;&gt;
+embed src=&quot;your.mid&quot; height=200 width=200
+&lt;/pre&gt;
+
+
+&lt;p&gt;7、容器单位：&lt;/p&gt;
+
+&lt;p&gt;语法：units=pixels、en
+说明：该属性指定高和宽的单位为pixels或en。
+示例：&lt;/p&gt;
+
+&lt;pre class=&quot;prettify&quot;&gt;
+embed src=&quot;your.mid&quot; units=&quot;pixels&quot; height=200 width=200
+embed src=&quot;your.mid&quot; units=&quot;en&quot; height=200 width=200
+&lt;/pre&gt;
+
+
+&lt;p&gt;8、外观设置：&lt;/p&gt;
+
+&lt;p&gt;语法：controls=console、smallconsole、playbutton、pausebutton、stopbutton、
+      volumelever 说明：该属性规定控制面板的外观。默认值是console。
+console：一般正常面板；
+smallconsole：较小的面板；
+playbutton：只显示播放按钮；
+pausebutton：只显示暂停按钮；
+stopbutton：只显示停止按钮；
+volumelever：只显示音量调节按钮。
+示例：&lt;/p&gt;
+
+&lt;pre class=&quot;prettify&quot;&gt;
+embed src=&quot;your.mid&quot; controls=smallconsole
+embed src=&quot;your.mid&quot; controls=volumelever
+&lt;/pre&gt;
+
+
+&lt;p&gt;9、对象名称：&lt;/p&gt;
+
+&lt;p&gt;语法：name=#
+说明：#为对象的名称。该属性给对象取名，以便其他对象利用。
+示例：&lt;/p&gt;
+
+&lt;pre class=&quot;prettify&quot;&gt;
+embed src=&quot;your.mid&quot; 
+&lt;/pre&gt;
+
+
+&lt;p&gt;10、说明文字：&lt;/p&gt;
+
+&lt;p&gt;语法：title=#
+说明：#为说明的文字。该属性规定音频或视频文件的说明文字。
+示例：&lt;/p&gt;
+
+&lt;pre class=&quot;prettify&quot;&gt;
+embed src=&quot;your.mid&quot; title=&quot;第一首歌&quot;
+&lt;/pre&gt;
+
+
+&lt;p&gt;11、前景色和背景色：&lt;/p&gt;
+
+&lt;p&gt;语法：palette=color|color
+说明：该属性表示嵌入的音频或视频文件的前景色和背景色，第一个值为前景色，第二个值为背景
+      色，中间用 | 隔开。color可以是RGB色（RRGGBB）也可以是颜色名，还可以是transparent
+     （透明）。 示例：
+     &lt;pre class=&quot;prettify&quot;&gt;
+     embed src=&quot;your.mid&quot; palette=&quot;red|black&quot;
+     &lt;/pre&gt;&lt;/p&gt;
+
+&lt;h3&gt;12、对齐方式：&lt;/h3&gt;
+
+&lt;p&gt;语法：align=top、bottom、center、baseline、 left、right、texttop、middle、
+      absmiddle、absbottom
+说明：该属性规定控制面板和当前行中的对象的对齐方式。
+center：控制面板居中；
+left：控制面板居左；
+right：控制面板居右；
+top：控制面板的顶部与当前行中的最高对象的顶部对齐；
+bottom：控制面板的底部与当前行中的对象的基线对齐；
+baseline：控制面板的底部与文本的基线对齐；
+texttop：控制面板的顶部与当前行中的最高的文字顶部对齐；
+middle：控制面板的中间与当前行的基线对齐；
+absmiddle：控制面板的中间与当前文本或对象的中间对齐；
+absbottom：控制面板的底部与文字的底部对齐。
+示例：&lt;/p&gt;
+
+&lt;pre class=&quot;prettify&quot;&gt;
+embed src=&quot;your.mid&quot; align=top
+embed src=&quot;your.mid&quot; align=center
+&lt;/pre&gt;
+
+</content>
+   </entry>
+   
+   <entry>
+     <title>月度实习总结</title>
+     <link href="http://alankell.github.io/summary"/>
+     <updated>2014-01-17T00:00:00+08:00</updated>
+     <id>http://http://alankell.github.io/summary</id>
+     <content type="html">&lt;h2&gt;机遇&lt;/h2&gt;
+
+&lt;p&gt;最开始听说信雅达这边招人的时候，并没有立刻就决定去面试，首先那段时间的确是比较忙，其次对那边的信息了解得也不是很多，当时我自己的想法还是想专心做自己的方向，总是以为在技术上，埋头干，爱折腾，勤专研总能收获到很多，反而当成工作以后会成为一种负担，还有各种乱七八糟的限制在里面，所以当初也就没有去面试。后来，有一同学面试进去之后跟我聊起来那边的状况，才感觉到有点后悔，因为正在做的项目是多么地符合我的心意，技术方面也是我最近正在学的，然后突然又好想去，回到寝室赶紧打开电脑，想看看还有没有机会进去，当时看见第二轮招人的时候，立马乐坏了，连夜赶了份简历就飞过去，后来面试也是很顺利。所以，机遇总是靠自己来抓的，在还没有了解事情的详情的时候，不要拒绝它，也许它就是你人生中的垫脚石。&lt;/p&gt;
+
+&lt;h2&gt;环境&lt;/h2&gt;
+
+&lt;p&gt;在没进办公室之前，就听同学说那边的环境格外地好，布置地各种优雅，于是面试完的第二天就满怀期待地跑过来了，果不其然，我感到非常满意，无论是光线和外景都很好，窃喜这里还是一个很好的学习场所，于是接下来的这一个月，除了上课，一天的大部分时间都在这里度过了。环境很清幽，但是在座的同事都是相当的热情，无论是在技术上，还是生活态度上，虽然刚熟识不多久，就已经打成一片了。对这里的一切我都感到很满意，并且很感恩能有机会来到这里。&lt;/p&gt;
+
+&lt;h2&gt;福利&lt;/h2&gt;
+
+&lt;p&gt;在这里实习的好处特别多，虽然每天工作的时间并不长，但是每个月都有1000元的实习工资，每个月还有月度之星额外奖励1000，然后办公室每个人配一台电脑和上网账号，公司这边也每两个星期也都会送水果和咖啡来犒劳我们，这种待遇对于我们在校苦逼学生来说已经是相当满足了，一天两个苹果+一杯咖啡=幸福生活，工作生活两不误，哈哈~&lt;/p&gt;
+
+&lt;h2&gt;工作&lt;/h2&gt;
+
+&lt;p&gt;因为我是后来才进去的，也就是比第一批晚两个星期，所以接下来的两个星期我还是以补课，把他们之前做的给补上，主要还是在脑子里要有这么一个项目的雏形，看书写报告，各种APP研究，都是希望能够有个前车之鉴，帮助我们尽快成长起来，投身于实际项目开发中去，对于整个项目组，这个月的项目目标也是先做一个简单类似大众点评网的app来练练手。虽然听起来简单，组里面大神也很多，但是实践当中也是遇到很多困难，办公室的灯基本上都是在晚上11点以后才熄的，值得高兴的是，大家都不觉得这有什么累的，反而异常地跟打了鸡血一样的兴奋，能有一帮人一起拼命做事是很有沉浸感的，这种类似创业的快感光想想就很享受。当然完成这个app并不是大家一股脑，每个人什么都做，还是要有分工，他们前面进来的分成四个组，前端，数据库，后台，连接，最开始的工作还是他们做的，我们后面进来的先是做了一个二维码模块，然后我又完成了一个移动网页版的类大众点评网，后来才加入前端组的，所以对于android端我还是贡献比较少的，说起来还是比较惭愧的。最后一个星期，因为我们要准备期末考试，公司也是很人性化地给我们放了假，当时任务没完成，也是允许我们期末之后课余时间自己完成，对此我感到非常的欣慰。我想，对于这样的这样的工作氛围和工作状态，是谁看了都会羡慕的吧，嘻嘻~&lt;/p&gt;
+
+&lt;h2&gt;生活&lt;/h2&gt;
+
+&lt;p&gt;因为大家都是工大学计算机的，所以进来之前彼此肯定都有一两个是认识的，所以熟识地也是非常地快，虽然刚开始大家刚开始接触这个项目的时候，都或多或少有些迷茫，但是随着开会开地多了，各组交流多了，每个人的目标也就有了。然后除了工作以外，我们的生活也是丰富到令人发指，大家都是志同道合的人，所以特别能玩到一块去，饭局，夜宵，K歌都是常有的事，特别是发工资那几天，老板们请客特别勤，刚好遇上考试周，于是大家在办公室复习到深夜之后，就会有一帮人冲进火锅店，吃得分外尽兴。记得圣诞节那天，我们还在办公室看起了电影，音响啊，投影仪啊各种凑起来，投影在白色窗帘上，边吃边看。可惜那天晚上，饭局上喝得比较多，已经不醒人事了，看电影没记住情节...&lt;/p&gt;
+
+&lt;h2&gt;期望&lt;/h2&gt;
+
+&lt;p&gt;对于这里一切，其实我已经非常的满意了。要说不足，可能团队合作方面还是有些欠缺，然后每个做的事总是不能合到一起去，有点乱。对于技术的掌握方面，也是因人而异，经常碰到的情况是，对某方面技术一点没接触的，却被分到了任务，这要补的就比较厉害了，希望下学期能够每个人对整体架构都了解一下之后，更专注到自己的方向上去，这样可能做出来的东西会更加的完美。这个练手的项目应该到现在就结束了，期待下一个项目。  :)&lt;/p&gt;
+</content>
+   </entry>
    
    <entry>
      <title>淘宝技术这十年</title>
@@ -35,7 +253,7 @@
      <link href="http://alankell.github.io/http"/>
      <updated>2013-11-21T00:00:00+08:00</updated>
      <id>http://http://alankell.github.io/http</id>
-     <content type="html">&lt;h1&gt;HTTP&lt;/h1&gt;
+     <content type="html">&lt;h2&gt;HTTP&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;Stability: 3 - Stable
 &lt;/code&gt;&lt;/pre&gt;
