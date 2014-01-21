@@ -26,7 +26,7 @@ body .hide{display:none;}
 .left,.right{display:inline;}
 .left{float:left;}
 .right{float:right;}
-
+#fork{position:absolute;top:0;right:0;}
 
 /***********default settings**********/
 body {font-family: 'Helvetica Neue',"微软雅黑","Arial","Helvetica","sans-serif";font-size:15px;
@@ -167,6 +167,7 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
     .blog .aside,
     .project .aside,
     .opinion .aside {display:none;background-image:none;}
+    .fork{display: none;background-image: none;}
 }
 
 @media (max-width: 1020px){
