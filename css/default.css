@@ -27,8 +27,7 @@ body .hide{display:none;}
 .left{float:left;}
 .right{float:right;}
 #fork{position:absolute;top:0;right:0;}
-#home-search{position: absolute;z-index:5;top:80px;left:15px;}
-#home-search .navbar-search{position:relative;float:left;margin-top:5px;margin-bottom:0;}.navbar-search .search-query{margin-bottom:0;padding:4px 14px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;font-weight:normal;line-height:1;-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;}
+
 
 /***********default settings**********/
 body {font-family: 'Helvetica Neue',"微软雅黑","Arial","Helvetica","sans-serif";font-size:15px;
