@@ -27,7 +27,7 @@ body .hide{display:none;}
 .left{float:left;}
 .right{float:right;}
 #fork{position:absolute;top:0;right:0;}
-#home-search{position: absolute;top:50px;left:15px;}
+#home-search{position: absolute;z-index:5;top:65px;left:15px;}
 
 /***********default settings**********/
 body {font-family: 'Helvetica Neue',"微软雅黑","Arial","Helvetica","sans-serif";font-size:15px;
