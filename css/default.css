@@ -177,6 +177,7 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
     #fork{display: none;background-image: none;}
     #canvas{display: none;}
     #canvas-div{display: none;}
+    #embed-control{display: none;}
 }
 
 @media (max-width: 1020px){
