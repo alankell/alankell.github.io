@@ -26,7 +26,7 @@ body .hide{display:none;}
 .left,.right{display:inline;}
 .left{float:left;}
 .right{float:right;}
-#fork{position:absolute;top:0;right:0;}
+#fork{position:fixed;top:0;right:0;}
 
 
 /***********default settings**********/
@@ -188,6 +188,8 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
     #canvas{display: none;}
     #canvas-div{display: none;}
     #embed-control{display: none;}
+    .column {float: right;width: 50%;}
+    .sb-search.sb-search-open {width: 100%;}
 }
 
 @media (max-width: 1020px){
