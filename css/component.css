@@ -118,3 +118,7 @@
 .no-js .sb-search .sb-search-submit {
 	z-index: 90;
 }
+
+@media screen and (max-width: 750px){
+.sb-search.sb-search-open {width: 100%;}
+}
