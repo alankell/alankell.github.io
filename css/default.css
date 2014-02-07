@@ -144,6 +144,15 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 .home-contact a { width:30px; display:inline-block; }
 .home-contact img { width:18px; }
 
+.column {
+    float: left;
+    width: 30%;
+    padding: 0 2em;
+    height: 38px;
+    position: relative;
+}
+
+
 
 /*#canvas-div{position: absolute;left:0px;top:50px;width: 45%;height:610px;z-index: 7;overflow:hidden; }
 #canvas{left:0px;right:0;top:0px;width:100%;height:620px;z-index: 7;position: absolute; }

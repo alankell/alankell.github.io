@@ -10,12 +10,19 @@
     <link rel="stylesheet" href="/css/default.css" type="text/css" />
     <link rel="shortcut icon" href="/favicon.jpg" type="image/x-icon" />
     <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
-    <script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="/js/modernizr.custom.js" type="text/javascript"></script>
+    <script src="/js/jquery-1.6.1.min.js" type="text/javascript"></script>
+    <script src="/js/jquery-tapir.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/css/component.css" type="text/css" />
+    
+
+
 </head>
 <body>
     
     
 
+ 
 
     <div class="home-menu">
         <div class="home-icon-con">
@@ -30,6 +37,24 @@
       
     </div>
      
+
+
+    
+       
+      <!--<div id="for_search">
+    
+    <ul class="nav">
+    {% assign pages_list = site.pages %}
+    {% assign group = 'navigation' %}
+    {% include JB/pages_list %}
+      <li>
+        <form class="searchform" action="search.html" method="get">
+          <input name="query" type="text" class="search-query" >
+        </form>
+      </li>
+    </ul>
+  </div>  -->
+
 
 
     {{ content }}
