@@ -154,11 +154,7 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 
 
 
-/*#canvas-div{position: absolute;left:0px;top:50px;width: 45%;height:610px;z-index: 7;overflow:hidden; }
-#canvas{left:0px;right:0;top:0px;width:100%;height:620px;z-index: 7;position: absolute; }
-.hand{cursor:pointer;}
-#embed-control{visibility: hidden;}
-*/
+
 @media screen and (max-width: 750px){
     body {font-size:14px;}
     #content {width:85%;margin:100px auto 50px; }
@@ -185,11 +181,9 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
     .project .aside,
     .opinion .aside {display:none;background-image:none;}
     #fork{display: none;background-image: none;}
-    #canvas{display: none;}
-    #canvas-div{display: none;}
     #embed-control{display: none;}
     .column {float: right;width: 50%;}
-    .sb-search.sb-search-open {width: 100%;}
+    
 }
 
 @media (max-width: 1020px){
