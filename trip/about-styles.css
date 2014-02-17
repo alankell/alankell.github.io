@@ -195,8 +195,8 @@ a{
 	margin-top:-170px;
 	margin-left:-70px;
 	opacity: 0;
-	-webkit-animation:name-in 0.7s ease-out 0.2s 1 forwards;
-	-moz-animation:name-in 0.7s ease-out 0.2s 1 forwards;
+	-webkit-animation:name-in 4.7s ease-out 4.2s 1 forwards;
+	-moz-animation:name-in 4.7s ease-out 4.2s 1 forwards;
 }
 .jjying2{
 	width:335px;
@@ -204,8 +204,8 @@ a{
 	opacity: 0;
 	margin-top:-30px;
 	margin-left:-167px;
-	-webkit-animation:name-in 0.7s ease-out 1.3s 1 forwards;
-	-moz-animation:name-in 0.7s ease-out 1.3s 1 forwards;
+	-webkit-animation:name-in 4.7s ease-out 6.3s 1 forwards;
+	-moz-animation:name-in 4.7s ease-out 6.3s 1 forwards;
 }
 /* Slide 2  -Bio */
 #slide2{
@@ -236,8 +236,8 @@ a{
 	opacity: 0;
 	margin-top:-30px;
 	margin-left:-167px;
-	-webkit-animation:name-in 0.7s ease-out 1.3s 1 forwards;
-	-moz-animation:name-in 0.7s ease-out 1.3s 1 forwards;
+	-webkit-animation:name-in 0.7s ease-out 6.3s 1 forwards;
+	-moz-animation:name-in 0.7s ease-out 6.3s 1 forwards;
 }
 
 /* Slide 3 - Baidu */
