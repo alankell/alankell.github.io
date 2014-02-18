@@ -1,0 +1,196 @@
+
+
+/* body */
+a {color:#00B98B;text-decoration:none;outline:none;}
+a:hover { color:#EA0037; text-decoration:none; }
+body {font-family: 'Helvetica Neue',"微软雅黑","Arial","Helvetica","sans-serif";}
+#headline{
+	font-size: 30px;
+	color: #00B98B;
+
+}
+.followyou{
+	color:#FF2C00 ;
+}
+
+.floatR{
+	float: right;
+	margin-right: 10px;
+	font-size: 12px;
+	margin-top: 6px;
+	color: coral;}
+.banner {
+	background: url(img/banner.jpg) no-repeat bottom right;
+	height: 400px;
+	position: relative;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.app-list h3 {
+	font-size: 14px;
+	line-height: 36px;
+	margin: 0 0 10px;
+}
+
+.app-list .wrapper,
+.app-list .right-list {
+	border: 1px solid #DFDFDF;
+	background: white;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px rgba(204, 204, 204, 0.8);
+}
+
+.app-list .wrapper ul {
+	margin: 0 6px;
+}
+
+.app-list .wrapper ul li {
+	text-align: center;
+	display: inline-block;
+	float: left;
+	margin: 0px 1px;
+	padding: 10px 0px;
+	width: 210px;
+	min-width: 200px;
+	overflow: hidden;
+}
+
+.app-list .wrapper a,
+.app-list .wrapper a:hover,
+.app-list .right-list a,
+.app-list .right-list a:hover {
+	color: #444;
+}
+
+.app-list .wrapper a.img {
+	display: block;
+	text-align: center;	
+}
+
+.app-list .wrapper a.img .desc {
+	display: block;
+	_display: inline-block;
+	height: 18px;
+	margin: 3px 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.app-list .wrapper img {
+	display: block;
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+}
+
+.app-list .wrapper .install  a,
+.app-list .right-list .install  a{
+	height: 18px;
+	color: #444;
+	background-color: #E8E8E8;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(0.25, white), to(#E8E8E8));
+	background-image: -moz-linear-gradient(0 25% 270deg, white,#E8E8E8);
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff',EndColorStr='#e8e8e8');
+	border: 1px solid #CCC;
+	border-radius: 2px;
+	display: inline-block;
+	padding: 0 10px;
+	line-height: 20px\9;
+	_line-height: 18px;
+	_vertical-align: bottom;
+}
+
+.app-list .wrapper .install a:hover,
+.app-list .right-list .install a:hover {
+	text-decoration: none;
+}
+
+.app-list .wrapper .install a:active,
+.app-list .right-list .install a:active {
+	outline: none;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#E8E8E8), to(white));
+	background-image: -moz-linear-gradient(center top,#E8E8E8,white);
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#e8e8e8',EndColorStr='#ffffff');
+	text-decoration: none;
+}
+
+.app-list .right-list ul {
+	margin-left: 4px;
+	margin-top: 10px;
+}
+
+.app-list .right-list li {
+	height: 32px;
+	position: relative;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.app-list .right-list li span {
+	display: inline-block;
+}
+
+.app-list .right-list .desc {
+	float:left;
+	height: 24px;
+	line-height: 24px;
+	margin-top: 6px;
+	margin-left: 4px;
+	width: 130px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.app-list .right-list .index {
+	color: gray;
+	line-height: 22px;
+	width: 20px;
+	text-align: center;
+	font-size: 12px;
+	float: left;
+	margin-top: 7px;
+}
+
+.app-list .right-list .img {
+	margin-left: 5px;
+	float: left;
+	margin-top: 5px;
+}
+
+.app-list .right-list .install {
+	position: absolute;
+	right: 5px;
+	top: 7px;
+	display: none;
+}
+
+.app-list .right-list .status-icon1,
+.app-list .right-list .status-icon2,
+.app-list .right-list .status-icon3,
+.app-list .right-list .status-icon4
+ {
+	position: absolute;
+	right: 15px;
+	top: 9px;
+	background: url(img/icon_sprite.png) no-repeat 0 0;
+	display: inline-block;
+	width: 20px;
+	height: 16px;
+}
+
+.app-list .right-list .status-icon2 {
+	background-position: 0 -16px;
+}
+
+.app-list .right-list .status-icon3 {
+	background-position: 0 -32px;
+}
+
+.app-list .right-list .status-icon4 {
+	background-position: 0 -48px;
+}
+
+.span5

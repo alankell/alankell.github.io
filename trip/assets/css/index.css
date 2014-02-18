@@ -1,0 +1,198 @@
+/*****************************************
+ * author: yaoli<yaoli111144@gmail.com>
+ * time:   2012-6-13
+ * update: 2012-6-16;
+ * desc:   versatile styles for whole sites  
+ ******************************************/
+
+
+/*  header  */
+input:focus {
+	border-color: #66AA00;
+	outline: none;
+}
+
+.header .focus {
+	border: 1px solid #66AA00;
+}
+
+.bd {
+	
+}
+
+
+.header {
+	height:108px;
+	background: #efefef url(img/header_bg.png) repeat-x;
+}
+
+.header .logo {
+	float: left;
+	font-weight: normal;
+	text-indent: -9866px;
+	margin: 0 80px 0 0;
+	line-height: 1;
+	text-decoration: none;
+	background: url(img/xi.jpg) ;
+	width: 142px;
+	height: 61px;
+}
+
+.header .search {
+	height:70px;
+}
+
+.header .search .search-box {
+	margin: 20px 0 0 0;
+	float: left;
+	height: 30px;
+	width: 390px;
+	background: white;
+	padding: 1px;
+	position: relative;
+}
+
+.header .search .login {
+	height: 15px;
+	line-height: 15px;
+	vertical-align: baseline;
+}
+
+.header .search .reg {
+	height: 15px;
+	line-height: 15px;
+	vertical-align: baseline;
+
+}
+
+.header .search .sep {
+	float: left;
+	font-size: 10px;
+	margin-top: 23px;
+	margin-left: 40px;
+	color: #808080; 
+	line-height: 24px;
+	height: 24px;
+	vertical-align: middle;
+}
+
+.search-ipt {
+	border: 1px solid #CBCBCB;
+	height: 26px;
+	padding: 1px 2px 1px 5px;
+	width: 381px;
+	display: block;
+	font-size: 13px;
+	line-height: 26px;
+	font-family: Arial;
+}
+
+
+.search-btn {
+	cursor: pointer;
+	text-indent: -9867px;
+	display: inline-block;
+	height: 27px;
+	width: 42px;
+	position: absolute;
+	right: 3px;
+	top: 2px;
+	background: url(img/web_frame_sprite.png) no-repeat -384px 1px;
+}
+
+.header  .menu {
+	height:38px;
+}
+
+.header .menu ul li {
+	float:left;
+	list-style:none;
+}
+
+.nav li a {
+	display: inline-block;
+	font-size: 13px;
+	padding: 0 20px;
+	color: #666;
+	height: 24px;
+	line-height: 24px;
+	margin: 6px 0;
+	font-weight: bold;
+	line-height: 26px\9;
+	_line-height: 24px;
+}
+
+.nav li a:hover {
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+.nav .active a {
+	border: 1px solid #CBCBCB;
+	color: #6A0;
+	background: #F2F2F2;
+	border-radius: 2px;
+	text-shadow: none;
+}
+
+
+
+/*  footer  */
+.footer {
+	width: 100%;
+	margin: 0 auto;
+	color: #777;
+	padding: 30px 0 20px;
+	border-top: 1px solid #D9D9D9;
+}
+
+.footer a,
+.footer a:hover {
+	color:#777;
+}
+
+.footer .bt {
+	margin: 10px 0 0;
+	padding: 10px 0 0;
+	color: #999;
+	border-top: 1px solid #DDD;
+}
+
+.footer .beian {
+	float: right;
+	color: #CCC;
+}
+
+.footer ul h3 {
+	color: #444;
+	margin-bottom: 5px;
+	font: bold 14px Arial;
+}
+.footer ul li.link {
+	float: left;
+	margin: 2px 0;
+	width: 150px;
+	margin-right: 30px;
+}
+
+.footer ul li.link ul {
+	margin-left: 0px;
+}
+
+.footer ul li.link li{
+	margin: 4px 0;
+}
+
+.footer ul li.link li a:hover {
+	color: #69C;
+}
+
+.footer .weibo-icon,
+.footer .twitter-icon {
+	background: url(img/web_frame_sprite.png) no-repeat -438px 2px;
+	padding-left:20px;
+}
+
+.footer .twitter-icon {
+	background-position: -438px -16px;
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>用户注册</title>
+	<link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" href="assets/css/account.css" />
+</head>
+<body>
+	<div class="header">
+		<div class="title">
+			<a href="index.htm">曦旅网</a>
+		</div>
+	</div>
+	<div class="bd">
+		<div class="clearfix">
+			<h1>注册曦旅网账号</h1>
+		</div>
+		<form method="post" id="form1" name="form1"  action="/register.action">
+			<fieldset>
+				<div class="field">
+					<label for="email">邮箱：</label>
+					<input class="J-email" tabindex="1" type="text" name="email" data-holder="请输入您的真实邮件地址，用于验证身份和找回密码" id="email" value="请输入您的真实邮件地址，用于验证身份和找回密码" maxlength="30" data-validate="^([\w\-\.]+(@|＠)[\w\-\.]+(\.\w+)+)$"/>	
+				</div>
+				<div class="alert alert-error fade in J-email">
+			           
+			            对不起，您输入的邮箱不符合规范。
+			    </div>
+				<div class="field">
+					<label for="username">名号：</label>
+					<input class="J-username" tabindex="2" type="text" name="username" id="username" data-holder="您希望别人怎么称呼您" value="您希望别人怎么称呼您" maxlength="20"" />
+				</div>
+				<div class="alert alert-error fade in J-username">
+			           
+			            对不起，您输入的名号不符合规范。
+			    </div>
+				<div class="field">
+					<label for="password">密码：</label>
+					<input class="J-pwd" tabindex="3"   value="至少6个字符，不能太简单了" data-holder="至少6个字符，不能太简单了" type="text" />
+					<input class="J-pwd-pwd" style="display:none; color:#000;" tabindex="3" id="password" name="password"  value="" data-holder="至少6个字符，不能太简单了" type="password" />
+					
+				</div>
+				<div class="alert alert-error fade in J-pwd-pwd">
+			            
+			            对不起，您输入的密码不符合规范。
+			    </div>
+				<div class="field">
+					<label for="password2" id="J-confrim">确认：</label>
+					<input class="J-pwd2" tabindex="4" value="请再次输入密码" data-holder="请再次输入密码" type="text" />
+					<input class="J-pwd-pwd2" tabindex="4" style="display:none; color:#000;" id="password2" name="password2" value="" data-holder="请再次输入密码" type="password" />
+				</div>
+				<div class="alert alert-error fade in J-pwd-pwd2">
+			            
+			            对不起，您输入的密码和第一次不一致。
+			    </div>
+				<div class="field">
+					<a class="submit" id="J-submit" href="#" id="regbtn" tabindex="6">注册新账号<span></span></a>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="footer">
+		<div class="wrapper clearfix">
+			<a class="button" href="login.htm">已有账号登录</a>
+			<a class="button2" href="login.htm">新浪微博账号登录</a>
+		</div>	
+	</div>
+	<script src="assets/js/jquery-1.7.2.min.js"></script>
+	<script src="assets/css/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/account.js"></script>
+</body>
+</html>

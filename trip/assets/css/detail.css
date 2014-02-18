@@ -1,0 +1,285 @@
+/*****************************************
+ * author: yaoli<yaoli111144@gmail.com>
+ * time:   2012-6-16
+ * desc:   specific style for detail page
+ ******************************************/
+
+/* body */
+.detail-container {
+	width: 750px;
+	margin: 0 auto;
+}
+
+.breadcrumb {
+	border: none;
+	background: none;
+	padding: 0px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.detail-thumbnails {
+	border: 1px solid #D7D7D7;
+	background-color: #EDEDED;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.thumbnail-wrapper {
+	width: 84px;
+	height: 84px;
+	margin-left: 25px;
+
+}
+
+.detail-thumbnails img {
+	display: block;
+	height: 72px;
+	width: 72px;
+}
+
+.detail-btn {
+	margin-top: 13px;
+}
+
+.btn1 {
+	display: inline-block;
+	height: 32px;
+	width: 100px;
+}
+
+.btn2 {
+	display: inline-block;
+	height: 32px;
+	width: 29px;
+}
+
+.detail-btn-normal,
+.detail-btn-status1,
+.detail-btn-status2,
+.detail-btn-status3 {
+	width: 132px;
+	height: 32px;
+	background: url(img/download-btn.png) no-repeat 0 0;
+	cursor: pointer;
+
+}
+
+.detail-btn-status1 {
+	background-position: 0 -38px;
+}
+
+.detail-btn-status2 {
+	background-position: 0 -75px;
+}
+
+.detail-btn-status3 {
+	background-position: 0 -110px;
+}
+
+.detail-btn .dropdown-menu {
+	width: 150px;
+}
+
+.detail-legend {
+	margin-top: 10px;
+}
+
+.detail-legend .bold {
+	display: inline-block;
+	line-height: 20px;
+	font-weight: bold;
+	color: #777;
+	width: 65px;
+}
+
+.detail-legend .thin {
+	display: inline-block;
+	line-height: 20px;
+	color: #999;
+	width: 85px;
+}
+
+.detail-divider {
+	height: 1px;
+	margin: 8px 1px;
+	overflow: hidden;
+	background-color: #E5E5E5;
+	border-bottom: 1px solid white;
+}
+
+i {
+	display: inline-block;
+	width: 15px;
+	height: 16px;
+	background: url(img/detail_sprite.png) no-repeat 0 0;
+	vertical-align: middle;
+}
+
+i.security {
+	background-position: 0 -503px;
+}
+
+i.like {
+	background-position: -30px -120px;
+}
+
+i.dislike {
+	background-position: -45px -120px;
+}
+
+i.gray-like {
+	background-position: 0 -120px;
+}
+
+i.gray-dislike {
+	background-position: -15px -120px;
+}
+
+i.hot {
+	background-position: -77px -227px;
+	width: 21px;
+	height: 14px;
+	
+}
+
+
+.detail-security span {
+	color: #6A0;
+	cursor: pointer;
+	padding-left: 4px;
+}
+
+.popover .sep {
+	border-top: 1px solid #EDEDED;
+	padding-top: 8px;
+	margin-top: 8px;
+}
+
+.detail-app-content {
+	float: left;
+	width: 390px;
+	margin-right: 10px;
+}
+
+.detail-app-desc {
+	float: left;
+	width: 160px;
+	margin-left: 30px;	
+}
+
+.detail-share {
+	margin-top: 10px;
+}
+
+.detail-accurate {
+	margin-top: 5px;
+}
+
+.detail-accurate a,
+.detail-accurate a:hover {
+	color: #999;
+}
+
+.detail-app-title {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 22px;
+	color:#444;
+	margin-bottom: 10px;
+}
+
+.detail-app-content-desc {
+	font-size: 13px;
+	line-height: 1.5;
+	height: 95px;
+	overflow: hidden;
+}
+
+.detail-desc-more {
+	position: relative;
+	margin-top: 10px;
+	border-bottom: 1px solid #EDEDED;
+}
+
+.detail-pic {
+	height: 300px;
+}
+
+.detail-pic .title {
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+	margin: 25px 0 10px 0;
+	color: #444;
+}
+
+
+.detail-more-change {
+	position: absolute;
+	display: block;
+	padding: 0 5px 0 5px;
+	right: 30px;
+	top: -8px;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.comment-box {
+	width: 578px;
+	max-width: 578px;
+}
+
+.detail-submit {
+	margin-left: 538px;
+}
+
+.comment-list-title {
+	padding-bottom: 3px;
+	border-bottom: 1px solid #EFEFEF;
+}
+
+.comment-list-title .title {
+	font-size: 14px;
+	font-weight: bold;
+	display: inline-block;
+	margin: 15px 0 0;
+	padding-bottom: 5px;
+	color: #444;
+}
+
+.comment-list-title .count {
+	color: #999;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.comment-lisst-content ul {
+	margin: 0px;
+
+}
+.comment-lisst-content ul li{
+	padding: 5px;
+	border-bottom: 1px solid #EFEFEF;
+	color: #444;
+	position: relative;
+}
+
+.comment-meta {
+	height: 20px;
+	line-height: 20px;
+}
+
+.comment-content {
+	margin: 3px 0;
+}
+
+.comment-name {
+	font-weight: bold;
+	margin-right: 7px;
+}
+
+.comment-status,
+.comment-time {
+	margin-right: 7px;
+}

@@ -1,0 +1,217 @@
+/*****************************************
+ * author: yaoli<yaoli111144@gmail.com>
+ * time:   2012-6-13
+ * desc:   styles for register & login
+ ******************************************/
+
+body {
+	background-color: #F5F8FA;
+}
+
+input, input:hover, input:focus {
+	outline: none;
+}
+
+
+/*  register  */
+.header {	
+	height: 46px;
+	background: #231F20;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#363a4d', endColorstr='#231f20');
+	background: -webkit-gradient(linear, left top, left bottom, from(#363A4D), to(#231F20));
+	background: -moz-linear-gradient(top, #363A4D, #231F20);
+}
+
+.header .title {
+	margin: 0 auto;
+	width: 760px;
+	color: #fff;
+	font-size: 25px;
+	padding-top: 13px;
+	padding-left: 60px;
+}
+
+.header .title a,
+.header .title a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.bd {
+	width: 540px;
+	min-height: 268px;
+	margin: 0 auto;
+}
+
+.bd h1 {
+	float: left;
+	font: 12px/18px "Microsoft Yahei", "Lucida Grande", "Segoe UI", Tahoma, Arial, Verdana, "STHeiti", sans-serif;
+	margin-left: 60px;
+	font-size: 20px;
+	color: #333;
+	line-height: 20px;
+	padding-top: 12px;
+}
+
+.bd .get-pwd {
+	float: left;
+	display: inline-block;
+	margin: 14px 0 0 170px;
+	font: 13px/18px "Microsoft Yahei", "Lucida Grande", "Segoe UI", Tahoma, Arial, Verdana, "STHeiti", sans-serif;
+}
+
+.bd {
+	width: 540px;
+	min-height: 268px;
+	margin: 0 auto;
+}
+
+.bd .field {
+	padding: 10px 0 0 105px;
+	position: relative;
+	zoom: 1;
+}
+
+.bd .field input {
+	width: 365px;
+	height: 34px;
+	line-height:32px;
+	vertical-align: middle;
+	padding: 0px;
+	padding-left:7px;
+	font-size:14px;
+	color: #000;
+}
+
+.bd fieldset {
+	padding-top: 13px;
+	position: relative;
+}
+
+.bd .field label {
+	position: absolute;
+	left: 60px;
+	top: 17px;
+	font: 14px "Microsoft Yahei", "Lucida Grande", "Segoe UI", Tahoma, Arial, Verdana, "STHeiti", sans-serif;
+
+}
+
+.bd fieldset p {
+	display: inline-block;
+	height: 34px;
+
+	margin-left: 5px;
+	margin-bottom: 0px;
+	text-indent: 10px;
+	width: 373px;
+	font: 14px/34px "Microsoft Yahei", "Lucida Grande", "Segoe UI", Tahoma, Arial, Verdana, "STHeiti", sans-serif;
+	color: #a0a0a0;
+	background-color: #FFF;
+	
+}
+
+.bd .field input {
+	color: #a0a0a0;
+	font-family: "Microsoft Yahei", "Lucida Grande", "Segoe UI", Tahoma, Arial, Verdana, "STHeiti", sans-serif;
+}
+
+.bd .alert {
+	display: none;
+	margin-left: 105px;
+	width: 323px;
+}
+
+.bd .submit {
+	font: 14px "Microsoft Yahei", "Lucida Grande", "Segoe UI", Tahoma, Arial, Verdana, "STHeiti", sans-serif;
+	color: #a0a0a0;
+	margin-left: 5px;
+	display: inline-block;
+	zoom: 1;
+	height: 36px;
+	line-height: 36px;
+	font-size: 16px;
+	color: white;
+	background: #6A0;
+	padding: 0 53px 0 17px;
+}
+
+.bd a.submit:hover {
+	text-decoration: none;
+}
+
+.bd .submit span {
+	position: absolute;
+	left: 225px;
+	top: 17px;
+	display: block;
+	width: 22px;
+	height: 21px;
+	background: url(img/arrow.png) no-repeat 0 0;
+}
+
+.bd #logbtn span {
+	left: 180px;
+}
+
+.footer {
+	width: 100%;
+	height: 60px;
+	background-color: #E1E3E6;
+}
+
+.footer .button,
+.footer .button2 {
+float: left;
+position: relative;
+width: 193px;
+height: 36px;
+line-height: 36px;
+border: 1px solid #CCC;
+color: black;
+font-size: 16px;
+margin: 8px 5px 0 60px;
+text-align: center;
+zoom: 1;
+background-color: #FDFDFD;
+filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFDFDFD', endColorstr='#FFDFDEDF');
+background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #FDFDFD), color-stop(100%, #DFDEDF));
+background-image: -webkit-linear-gradient(top, #FDFDFD 0%, #DFDEDF 100%);
+background-image: -moz-linear-gradient(top, #FDFDFD 0%, #DFDEDF 100%);
+background-image: -o-linear-gradient(top, #FDFDFD 0%, #DFDEDF 100%);
+background-image: -ms-linear-gradient(top, #FDFDFD 0%, #DFDEDF 100%);
+background-image: linear-gradient(top, #FDFDFD 0%, #DFDEDF 100%);
+}
+
+.footer .button2 {
+	margin-left: 0px;
+}
+
+.footer .wrapper {
+	width: 540px;
+	margin: 0 auto;
+}
+
+.footer a {
+	display: inline-block;
+	font: 14px "Microsoft Yahei", "Lucida Grande", "Segoe UI", Tahoma, Arial, Verdana, "STHeiti", sans-serif;
+	
+}
+
+.footer a:hover {
+	text-decoration: none;
+
+}
+
+/*  login */
+#autolog {
+	position: static;
+
+}
+
+.check {
+	padding-left: 110px;
+}
+
+.check .auto-label {
+	vertical-align: middle;
+}
