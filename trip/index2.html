@@ -6,6 +6,15 @@
 	<link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.css" />
 	<link rel="stylesheet" href="assets/css/index.css" />
 	<link rel="stylesheet" href="assets/css/homepage.css" />
+	<link rel="stylesheet" type="text/css" href="orbit-1.2.3.css">
+	<script type="text/javascript" src= "jquery.orbit-1.2.3.min.js"></script>
+	<script type="text/javascript" src="assets/css/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript"src ="/assets/js/bootstrap-dropdown.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });
+   </script>
 </head>
 <body>
 	<div class="header">
@@ -23,15 +32,26 @@
 		        </p>
 			</div>
 			<div class="menu clearfix">
-				<ul class="nav">
+				<ul class="nav nav-tabs">
 					<li class="active"><a href="index2.html">首页</a></li>
 					<li><a href=""> 跟我走 </a></li>
 					<li><a href=""> 跟他走 </a></li>
 					<li><a href=""> 跟大家走</a></li>
-					<li><a href=""> 机票预订 </a></li>
-					<li><a href=""> 景点预定 </a></li>
-					<li><a href=""> 租车预定 </a></li>
-				</ul>
+					<li><a href=""> 攻略论坛</a></li>
+                       <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" id="mydropdown" href="#">预定<b class="caret"></b> </a>
+					
+                        <ul class="dropdown-menu">
+                        	<li><a href=""> 景点预定 </a></li>
+					        <li><a href=""> 租车预定 </a></li>
+					        <li><a href=""> 机票预定 </a></li>
+                         </ul>
+                        </li>
+
+
+                 </ul>
+
+
 			</div>
 		</div>
 	</div>
@@ -175,7 +195,7 @@
 			    <div class="hot-point">
 			    	<a href="#" title="更多线路" class="floatR">more&gt;&gt;</a>
 
-			      <a href=""><h3>近日热门旅游景点</h3></a></div>
+			      <a href=""><h3>个性化热门旅游路线</h3></a></div>
 			      <div class="wrapper">
 				      <ul class="clearfix">
 				      	<li>
@@ -276,7 +296,7 @@
 			    </div>
 			    <div class="span4">
 			    	<!-- start application-->
-				    <a href=""><h3>每周热门攻略排行</h3></a>
+				    <a href=""><h3>每周热门路线排行</h3></a>
 				    <div class="right-list">
 				    	<ul>
 				    		<li class="clearfix J-pop2"  data-desc="">
@@ -353,7 +373,7 @@
 			    	</div>
 			    	<!-- end application -->
 			    	<!-- start game-->
-			    	<a href=""><h3>年度热门攻略排行</h3></a>
+			    	<a href=""><h3>每周热门攻略排行</h3></a>
 				    <div class="right-list">
 				    	<ul>
 				    		<li class="clearfix J-pop2"  data-desc="">
@@ -505,12 +525,13 @@
         </div>
 	</div>
 	<p id="embed-control"><embed src="http://www.xiami.com/widget/1197426_3570901,_235_346_FF8719_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="0" height="0" wmode="opaque"></embed></p>
-	<script src="assets/js/jquery-1.7.2.min.js"></script>
+	<script src="assets/js/jquery.js"></script>
 	<!-- <script src="assets/css/bootstrap/js/bootstrap.min.js"></script> -->
 	<script src="assets/js/bootstrap-typeahead.js"></script>
 	<script src="assets/js/bootstrap-tooltip.js"></script>
 	<script src="assets/js/bootstrap-popover.js"></script>
 	<script src="assets/js/orbit-1.2.3/jquery.orbit-1.2.3.js"></script>
 	<script src="assets/js/index.js"></script>
+	
 </body>
 </html>
