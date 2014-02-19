@@ -6,11 +6,11 @@
 	<link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.css" />
 	<link rel="stylesheet" href="assets/css/index.css" />
 	<link rel="stylesheet" href="assets/css/homepage.css" />
-	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="orbit-1.2.3.css">
 	<script type="text/javascript" src= "jquery.orbit-1.2.3.min.js"></script>
 	<script type="text/javascript" src="assets/css/bootstrap/js/bootstrap.js"></script>
-	<script type="text/javascript"src ="/assets/js/bootstrap-dropdown.js"></script>
+
 	<script type="text/javascript">
         $(document).ready(function () {
             $('.dropdown-toggle').dropdown();
@@ -36,16 +36,15 @@
 				<ul class="nav nav-tabs">
 					<li class="active"><a href="index2.html">首页</a></li>
 					<li><a href=""> 跟我走 </a></li>
-					<li><a href=""> 跟他走 </a></li>
 					<li><a href=""> 跟大家走</a></li>
 					<li><a href=""> 攻略论坛</a></li>
                        <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" id="mydropdown" href="#">预定<b class="caret"></b> </a>
 					
-                        <ul class="dropdown-menu">
-                        	<li><a href=""> 景点预定 </a></li>
-					        <li><a href=""> 租车预定 </a></li>
-					        <li><a href=""> 机票预定 </a></li>
+                        <ul class="dropdown-menu" >
+                        	<li><a href="http://jingdian.114piaowu.com/"> 景点预定 </a></li>
+					        <li><a href="http://www.yongche.com/"> 租车预定 </a></li>
+					        <li><a href="http://www.12306.cn/"> 机票预定 </a></li>
                          </ul>
                         </li>
 
@@ -62,7 +61,7 @@
 			<div class="container-fluid banner">
 			  <div class="row-fluid">
 			    <div class="span5">
-			      <h2 id="headline">跟你走</h2>
+			      <h2 id="headline"><a href="#">跟你走</a></h2>
 
 
  <form class="form-horizontal">
@@ -178,12 +177,19 @@
           </fieldset>
   </form>
 
-
 </div>
 
 
-			    <div class="span8">
+
+
+
+
+
+<div class="span8">
 			      
+
+
+
 			    </div>
 			  </div>
 			</div>
@@ -192,6 +198,34 @@
 			<div class="container-fluid app-list">
 			  <div class="row-fluid">
 			    <div class="span9">
+
+<h2 id="headline"><a href="#">跟他走</a></h2>
+<span id="description">根据你的兴趣为你推荐其他用户提交的个性化旅游路线</span>
+<div class="followhis">
+<ul class="nav nav-tabs">
+  <li >
+    <a href="#">最新发布</a>
+  </li>
+  <li><a href="#">支持率最高</a></li>
+  <li><a href="#">成行性最高</a></li>
+</ul>
+</div>
+<div id="featured"> 
+     <img src="1.jpg" alt="Overflow: Hidden No More" data-caption="#1" />
+     <img src="2.jpg"  alt="HTML Captions" data-caption="#2"/>
+     <img src="3.jpg" alt="and more features"data-caption="#3" />
+     <img src="4.jpg"  alt="HTML Captions" data-caption="#4"/>
+
+</div>
+ <span class="orbit-caption" id="1"> <a href="#">【我们出发吧】在这大草原上奔腾 </a></span>
+<span class="orbit-caption" id="2"> <a href="#">巴黎，致终将逝去的青春（10日游） </a></span>
+<span class="orbit-caption" id="3"> <a href="#">向东走，金陵苏州踏岚行（江苏南京+苏州舒适7日游）</a></span>
+<span class="orbit-caption" id="4"> <a href="#">零下30°的温暖，冰雪王国之旅</a></span>
+<script type="text/javascript">
+     $(window).load(function() {
+         $('#featured').orbit();
+     });
+</script>
 			    	<!-- start up-fast -->
 			    <div class="hot-point">
 			    	<a href="#" title="更多线路" class="floatR">more&gt;&gt;</a>
@@ -206,21 +240,6 @@
 				      		</a>
 				      	</li>
 				      	<li>
-				      		<a href="#" class="img">
-				      			<img src="assets/images/tian.jpg" />
-				      			<span class="desc">天堂之境</span>
-				      		</a>
-				      	</li><li>
-				      		<a href="#" class="img">
-				      			<img src="assets/images/tian.jpg" />
-				      			<span class="desc">天堂之境</span>
-				      		</a>
-				      	</li><li>
-				      		<a href="#" class="img">
-				      			<img src="assets/images/tian.jpg" />
-				      			<span class="desc">天堂之境</span>
-				      		</a>
-				      	</li><li>
 				      		<a href="#" class="img">
 				      			<img src="assets/images/tian.jpg" />
 				      			<span class="desc">天堂之境</span>
@@ -274,28 +293,13 @@
 				      			<img src="assets/images/san.jpg" />
 				      			<span class="desc">三亚七天旅游攻略</span>
 				      		</a>
-				      	</li><li>
-				      		<a href="#" class="img">
-				      			<img src="assets/images/san.jpg" />
-				      			<span class="desc">三亚七天旅游攻略</span>
-				      		</a>
-				      	</li><li>
-				      		<a href="#" class="img">
-				      			<img src="assets/images/san.jpg" />
-				      			<span class="desc">三亚七天旅游攻略</span>
-				      		</a>
-				      	</li><li>
-				      		<a href="#" class="img">
-				      			<img src="assets/images/san.jpg" />
-				      			<span class="desc">三亚七天旅游攻略</span>
-				      		</a>
 				      	</li>
 				      	
 				      </ul>
 			  	  </div>
 			  	  <!-- end update classic -->
 			    </div>
-			    <div class="span4">
+			    <div class="span4" id="rightfirst">
 			    	<!-- start application-->
 				    <a href=""><h3>每周热门路线排行</h3></a>
 				    <div class="right-list">
@@ -374,6 +378,7 @@
 			    	</div>
 			    	<!-- end application -->
 			    	<!-- start game-->
+			    	<div id="right-end">
 			    	<a href=""><h3>每周热门攻略排行</h3></a>
 				    <div class="right-list">
 				    	<ul>
@@ -449,6 +454,7 @@
 				    		</li>
 				    	</ul>
 			    	</div>
+			    </div>
 			    	<!-- end game -->
 			  </div>
 			</div>

@@ -2,16 +2,45 @@
 
 /* body */
 a {color:#00B98B;text-decoration:none;outline:none;}
-a:hover { color:#EA0037; text-decoration:none; }
-body {font-family: 'Helvetica Neue',"微软雅黑","Arial","Helvetica","sans-serif";}
+ a:hover { color:#EA0037; text-decoration:none; }
+.nav li{margin-left: : 30px;margin-right: 30px;}
+.nav li a:hover{color:#00B98B; text-decoration:none;}
+
+#description{
+	position: relative;
+	left: 30px;
+font-size: 14px;
+	color: gray;
+
+}
+
+body{font-family: 'Helvetica Neue',"微软雅黑","Arial","Helvetica","sans-serif";}
+#rightfirst{
+	position: relative;
+	top:48px;
+}
+#right-end{
+	top: 35px;
+position: relative;
+
+
+}
 #headline{
 	font-size: 30px;
 	color: #00B98B;
+	display: inline-block;
 
 }
+.followhis{
+	margin: auto;
+	margin-bottom: -45px
+}
+.followhis ul li{margin-left: 62px;}
 .followyou{
 	color:#FF2C00 ;
 }
+
+
 
 .arrow{
 	margin:0 auto;
@@ -51,6 +80,8 @@ body {font-family: 'Helvetica Neue',"微软雅黑","Arial","Helvetica","sans-ser
 	margin-bottom: 20px;
 	border-radius: 5px;
 	box-shadow: 0px 0px 4px rgba(204, 204, 204, 0.8);
+	top:5px;
+	position: relative;
 }
 
 .app-list .wrapper ul {

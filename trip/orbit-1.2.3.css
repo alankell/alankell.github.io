@@ -9,10 +9,12 @@
 /* PUT IN YOUR SLIDER ID AND SIZE TO MAKE LOAD BEAUTIFULLY
    ================================================== */
 #featured { 
-	width: 590px;
-	height: 234px;
+	width: 670px;
+	height: 377px;
 	background: #000 url('orbit/loading.gif') no-repeat center center;
-	overflow: hidden; }
+	overflow: hidden; 
+    bottom: 10px;
+    top:10px;}
 #featured>img,  
 #featured>div,
 #featured>a { display: none; }
@@ -25,7 +27,9 @@
 
 div.orbit-wrapper {
 
-    position: relative; }
+    position: relative; 
+margin-top: 60px;
+margin-bottom: 25px;}
 
 div.orbit {
  
@@ -122,6 +126,7 @@ span.pause.active {
 
 .orbit-caption {
     display: none;
+    background: :url(images/heart_button.png) no-repeat center top;
     font-family: "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif; }
 
 .orbit-wrapper .orbit-caption {
