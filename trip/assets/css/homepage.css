@@ -59,6 +59,16 @@ position: relative;
 	font-size: 12px;
 	margin-top: 6px;
 	color: coral;}
+
+.banner1{
+	background: url(img/banner.jpg) no-repeat bottom right;
+	height: 500px;
+	position: relative;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+
 .banner {
 	background: url(img/banner.jpg) no-repeat bottom right;
 	height: 680px;
