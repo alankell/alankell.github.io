@@ -6,6 +6,8 @@ a {color:#00B98B;text-decoration:none;outline:none;}
 .nav li{margin-left: : 30px;margin-right: 30px;}
 .nav li a:hover{color:#00B98B; text-decoration:none;}
 
+.clearboth{clear: both;}
+.cankaoluxian{width: 800px;display: inline-block;}
 #description{
 	position: relative;
 	left: 30px;
@@ -13,6 +15,15 @@ font-size: 14px;
 	color: #EA0037;
 
 }
+
+
+.W_ico20 {
+display: inline-block;
+width: 20px;
+height: 20px;
+background-image: url("http://img.t.sinajs.cn/t5/style/images/common/icon.png?id=1392885674388");
+_background-image: url("http://img.t.sinajs.cn/t5/style/images/common/icon.gif?id=1392885674388");
+background-repeat: no-repeat;}
 
 body{font-family: 'Helvetica Neue',"微软雅黑","Arial","Helvetica","sans-serif";}
 #rightfirst{
@@ -137,6 +148,12 @@ position: relative;
 	text-overflow: ellipsis;
 }
 
+.wrapper img {
+	display: block;
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+}
 .app-list .wrapper img {
 	display: block;
 	margin: 0 auto;
