@@ -81,7 +81,7 @@ position: relative;
 
 
 .banner {
-	background: url(img/banner.jpg) no-repeat bottom right;
+	background: url(banner.jpg) no-repeat bottom right;
 	height: 680px;
 	position: relative;
 	margin-bottom: 20px;
