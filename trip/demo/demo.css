@@ -1,9 +1,38 @@
+.box5{
+    width: 100%;
+    height: 50%;
+    background: url("images/shouye.jpg");
+    border-radius: 3px;
+    filter:alpha(opacity=50);
+}
+.box6{
+    width: 47%;
+    display: inline-block;
+    height: 14%;
+    background-color: #3994E5;
+    border-radius: 3px;
+    margin-top: 4px;
+    margin-right: 1px;
+    margin-left: 1px;
+}
+.box7{
+    width: 320px;
+    height: 370px;
+}
+.box8{
+    width: 48%;
+
+}
+
+
+
+
 .head{
     background-color:;
     margin-right: 10px;
     margin-left: 10px;
 }
-body{width:100%;font-family:"Microsoft YaHei",Helvetica,Arial,sans-serif;font-size:15px;color:#323232}
+body{width:100%;font-family:serif,"Microsoft YaHei",Helvetica,Arial,sans-serif;font-size:15px;color:#323232}
 div a { 
         text-decoration:none;
         font-size: 14px;
@@ -38,8 +67,8 @@ input,select,li{vertical-align:middle;}
 
 #box1{
     box-flex: 1;
-    margin-left: 3px;
-    margin-right: -15px;
+    margin-left: 4px;
+    margin-right: 3px;
 
 
 }
@@ -69,7 +98,7 @@ input,select,li{vertical-align:middle;}
 }
 #box3 div{
     display: inline-block;
-    width: 14%;
+    width: 13%;
     height: 4%;
     vertical-align: middle;
     margin-bottom: 10px;
@@ -119,9 +148,10 @@ margin-left: 50px;
 
 }
 .boxhead{
-    padding-left: 15px;
-    color: gray;
+    padding-left: 5px;
+    color: #22cdd3;
     font-weight: bold;
+    padding-top: 5px;
 }
 
 #ui-bar{margin-left: 50px;
