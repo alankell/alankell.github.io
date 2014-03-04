@@ -4,7 +4,7 @@
   */
 
 //define your token
-define("TOKEN", "weixin");
+define("TOKEN", "alankell");
 $wechatObj = new wechatCallbackapiTest();
 $wechatObj->valid();
 
@@ -45,7 +45,7 @@ class wechatCallbackapiTest
 				if(!empty( $keyword ))
                 {
               		$msgType = "text";
-                	$contentStr = "Welcome to wechat world!";
+                	$contentStr = "Welcome to alankell's world!";
                 	$resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
                 	echo $resultStr;
                 }else{
