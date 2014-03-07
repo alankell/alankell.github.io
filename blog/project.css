@@ -1,0 +1,209 @@
+body{
+	font-family: 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,'Hiragino Sans GB',sans-serif;
+	background-image:url("5.jpg"); }
+
+#head{
+
+    width: 960px;
+    margin: auto;
+    color: white;
+    border-bottom: dashed 1px white;
+    margin-bottom: 8px; 	}
+
+
+a{color: gray;
+	text-decoration: none;}
+#wrapper{
+	width: 960px;
+    margin: auto; 
+	
+
+    
+ }
+
+
+.main{width: 680px;
+
+	background-color: white;
+	margin-right: 20px;
+    float:left;
+   border-radius: 8px;
+	padding: 20px;}
+
+.side{width: 220px;
+		background-color: white;
+    float: right;
+    border-radius: 8px;
+   }
+
+#footer{width: 960px;
+	  padding: 5px;
+   	margin: auto;
+    margin-top: 30px;
+    
+   	border-top: dashed 1px white;
+    
+   }
+
+.logo_title{
+	float: left;
+}
+.logo_title h1{
+	font-size: 30px;
+}
+.logo_title h2{
+	font-size: 20px;
+}
+ .navi{
+   	float: right;
+
+   }
+ .clear{clear: both;}
+ .navi ul{
+ 	list-style: none;
+ 	margin-top: 78px;
+ 	margin-right: 400px;
+    word-spacing: 20px;
+    font-size: 15px;
+    
+     }
+
+ .navi ul li{
+ 	display: inline-block;
+
+ }
+
+ .navi ul li a{
+ 	color: white;
+    border: solid 1px white;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+ }
+
+ .item{
+ 	border-bottom: dashed 1px gray;
+ 	padding-bottom: 4px;
+ 	margin-top: 10px;
+ }
+ .item_img{
+ 	float: left;
+ 	width: 100px;
+ 	padding-top: 12px;
+ }
+ .item_img img{width: 80px;
+ }
+ .item_content{padding-left: 100px;
+ }
+ .item_content h3{
+ 	font-size: 16px;
+ 	color: #a5612d;
+ 	margin: 0;
+
+ }
+ .item_info{
+ 	font-size: 12px;
+ 	font-style: italic;
+ 	margin: 0;
+ }
+.item_desc{
+	font-size: 13px;
+	color: gray;
+	border-left: solid 1px #ccc;
+	padding-left: 10px;
+   
+}
+ .author_img{
+  width: 120px;
+  margin: auto;
+  margin-top: 20px;}
+
+  .author_img img{
+    width:120px;
+    border-radius: 6px;
+    border: solid 1px #ccc;
+
+  }
+
+  .author_desc{
+
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    border: solid 1px gray;
+    background: #ddd;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .author_desc h4{
+    margin: 0;
+      margin-bottom: 10px;}
+  .author_desc p{
+    margin: 0;
+    font-size: 15px;
+  
+  }
+
+  .top_article h3{
+      font-size: 18px;
+      font-style: italic;
+      border-bottom: dashed 1px #ccc;
+      color: 999;
+  }
+  .top_article ul{
+    list-style: none;
+    margin-left: 20px;
+    padding-left: 5px;
+
+    border-bottom: dashed 1px #ccc;
+  }
+   .top_article ul li{
+    margin-top: 10px;
+    color: gray;
+    margin-bottom: 10px;
+  }
+  .site_info{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    }
+
+  .site_info p{
+    font-size: 14px;
+    color: gray;
+    padding-left: 60px;
+    margin: 0;
+    margin-top: 10px;
+    
+    ;
+  }
+
+.site_about{
+  float: left;
+  margin: 0;
+
+
+}
+.site_link{
+  float: right;
+ 
+}
+.site_about{
+   margin: 0;
+   color: white;
+   padding-left: 30px;
+}
+
+.site_link ul {
+  margin: 0;
+
+}
+.site_link ul li{
+   display: inline-block;
+   color: white;
+   padding-left: 10px;
+
+}
