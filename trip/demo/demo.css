@@ -8,16 +8,16 @@
 .box6{
     width: 47%;
     display: inline-block;
-    height: 14%;
+    height: 13%;
     background-color: #3994E5;
     border-radius: 3px;
-    margin-top: 4px;
-    margin-right: 1px;
-    margin-left: 1px;
+    margin-top: 2%;
+    margin-left: 1.2%;
 }
 .box7{
-    width: 320px;
-    height: 370px;
+    width: 95%;
+    margin: auto;
+    height: 450px;
 }
 .box8{
     width: 48%;
@@ -46,8 +46,8 @@ div a {
 
 @media screen and (max-width: 320px){}
 .navi{
-    margin-left: -35px;
-    width:350px; 
+    margin-left: -12%;
+width: 100%;
 }
 
 
@@ -61,15 +61,13 @@ input,select,li{vertical-align:middle;}
      box-orient: vertical;
      -mozbox-box-orient: vertical;
      -webkit-box-orient:vertical;
-     width: 300px;
+     width: 100%;
  
 }
 
 #box1{
     box-flex: 1;
-    margin-left: 4px;
-    margin-right: 3px;
-
+    width:108%;
 
 }
 #box2{
@@ -82,7 +80,7 @@ input,select,li{vertical-align:middle;}
 #box1 div, #box2 div { display:inline-block; 
  width:30%;
  margin-left: -10%;
-
+margin-top: 2%;
  padding:0px;
 }
 
@@ -92,18 +90,19 @@ input,select,li{vertical-align:middle;}
 }
 
 #box3 {
-    width: 300px;
-    margin-left: 33px;
-    padding: 0px;
+  width: 85%;
+padding: 0px;
+margin: auto;
+margin-top: 4%;
 }
 #box3 div{
     display: inline-block;
-    width: 13%;
+    width: 17%;
     height: 4%;
     vertical-align: middle;
-    margin-bottom: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    margin-bottom: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
     margin-left: 0%;
 
 
@@ -134,15 +133,13 @@ margin-left: 50px;
 }
 
 
-.town{margin-left: 100px;
+.town{
     background-color: #E1DCD7;
-    padding-left:10px; 
-    padding-right: 10px;
+    padding-left:6%;
    
 }
 .towns{
-    padding-right: 7.5px;
-    padding-left: 7.5px;
+    padding-left: 5%;
     
     background-color: #E1DCD7;
 
