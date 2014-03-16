@@ -104,7 +104,7 @@ alert('The album' + this.name + ' belongs to ' + owner);
 </pre>
 这里<code>alert('The album' + this.name + ' belongs to ' + owner)</code>中的<code>this.name</code>就能直接取到album对象中的name属性了
 ##发现
-至此我们可以总结出函数的三种调用方式
+至此总结出函数的三种调用方式
 
 *  <pre>obj.myFunc();</pre>
 *  <pre>myFunc.call(obj,arg);</pre>
