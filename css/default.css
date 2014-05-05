@@ -31,7 +31,7 @@ body .hide{display:none;}
 
 /***********default settings**********/
 body {font-family: 'Open Sans','Helvetica Neue',"微软雅黑","Arial","Helvetica","sans-serif";font-size:15px;
-    background:url("/images/retina_dust.png");color:#444;colori:#666}
+    background:url("/images/bg.png");color:#444;colori:#666}
 
 a {color:#4A75B5;text-decoration:none;outline:none;}
 a:hover {text-decoration:underline}
