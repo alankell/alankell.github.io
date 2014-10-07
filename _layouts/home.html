@@ -16,15 +16,19 @@ layout:           default
         <script>
             new UISearch(document.getElementById('sb-search'));
         </script>
-        <p id="embed-control">
-        <embed src="http://www.xiami.com/widget/1197426_2075544,_235_346_FF8719_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="0" height="0" wmode="opaque">   
-        </embed>
-        </p>
-        
 {{ content }}
 
 <script type="text/javascript">
     $(function(){
+        var src = [
+            'http://imk2.qiniudn.com/emotional.swf',
+            'http://imk2.qiniudn.com/family.swf',
+            'http://imk2.qiniudn.com/building.swf',
+            'http://download.taobaocdn.com/seller_2012/gracious-dream.mp3',
+          ];
+        var index = Math.floor(Math.random(0, 1)  * src.length);
+        $('body').append('<embed width="0" height="0" loop="true" src="' + src[index] + '"/>');
+
         function animateBar($item,noAni){
             var spanLeft = $item.find('span').offset().left;
             var conLeft = $item.parent().offset().left;
