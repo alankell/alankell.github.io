@@ -37,12 +37,14 @@
 	z-index: 10;
 	padding: 0px;
 	font-family: inherit;
-	font-size: 18px;
+	font-size: 16px;
 	color: #2c3e50;
 }
 
 .sb-search-input::-webkit-input-placeholder {
-	color: #efb480;
+	padding-left: 10px;
+	color: rgb(150, 139, 139);
+	font-size: 15px;
 }
 
 .sb-search-input:-moz-placeholder {

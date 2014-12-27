@@ -4,18 +4,19 @@ layout:           default
 
 <div class="column">
  <div id="sb-search" class="sb-search">
-                        <form  action="search.html" method="get">
-                            <input class="sb-search-input"  type="text" value="" name="query" id="search" placeholder="仅支持英文搜索">
-                            <input class="sb-search-submit" type="submit" value="">
-                            <span class="sb-icon-search"></span>
-                        </form>
+    <form  action="search.html" method="get">
+        <input class="sb-search-input"  type="text" value="" name="query" id="search" placeholder="请输入英文搜索">
+        <input class="sb-search-submit" type="submit" value="">
+        <span class="sb-icon-search"></span>
+    </form>
  </div>
 </div>
-        <script src="http://alankell.com/js/classie.js"></script>
-        <script src="http://alankell.com/js/uisearch.js"> </script>
-        <script>
-            new UISearch(document.getElementById('sb-search'));
-        </script>
+    <script src="../js/classie.js"></script>
+    <script src="../js/uisearch.js"> </script>
+    <script>
+        new UISearch(document.getElementById('sb-search'));
+    </script>
+        
 {{ content }}
 
 <script type="text/javascript">
