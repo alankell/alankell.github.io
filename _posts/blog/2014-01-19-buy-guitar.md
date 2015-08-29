@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 如何选择适合自己的吉他
+title: 如何选择适合自己的吉他(repost)
 description: 能选择一把适合属于自己的吉他，是一件很幸福的事。
 category: blog
 ---

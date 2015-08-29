@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>垂直居中</title>
+  <style>
+    .boxA {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      background-color: skyblue;
+      text-align: center;
+      display: block;
+      margin-bottom: 5px;
+      }
+
+    /* 第一种方法 */
+    .boxB {
+      position: absolute;
+      max-width: 200px;
+      max-height: 200px;
+      line-height: 200px;
+      background-color: indianred;
+      left:0;
+      top:0;
+      bottom:0;
+      right:0;
+      margin:auto;
+    }
+    /* 第二种方法 */
+    .boxC{
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      position: absolute;
+      left: 50%;
+      bottom: 50%;
+      margin-left: -100px;
+      margin-bottom: -100px;
+      background-color: indianred;
+    }
+    /* 第三种方法 */
+    .vAlign {                /*基线*/
+      vertical-align:middle;
+      display:inline-block;
+      height:100%;
+      width:1px;
+      margin-left:-1px;
+    }
+     .boxD{
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      vertical-align: middle;
+      background-color: indianred;
+      display: inline-block;
+      }
+    /* 第四种方法 */
+    .flex{
+      width: 400px;
+      height: 400px;
+      background-color: skyblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .boxE{
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      background: indianred;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="boxA">
+    <div class="boxB">Box B</div>
+  </div>
+  <div class="boxA">
+    <div class="boxC">Box C</div>
+  </div>
+  <div class="boxA">
+    <span class="vAlign"></span>
+    <div class="boxD">box D</div>
+  </div>
+  <div class="flex">
+    <div class="boxE">box E
+    </div>
+  </div>
+</body>
+</html>

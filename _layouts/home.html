@@ -16,25 +16,26 @@ layout:           default
     <script>
         new UISearch(document.getElementById('sb-search'));
     </script>
-        
+
 {{ content }}
 
 <script type="text/javascript">
     $(function(){
         var src = [
-            'http://imk2.qiniudn.com/emotional.swf',
-            'http://imk2.qiniudn.com/family.swf',
-            'http://imk2.qiniudn.com/building.swf',
-            'http://download.taobaocdn.com/seller_2012/gracious-dream.mp3',
+            'http://7tsy1x.com1.z0.glb.clouddn.com/building.swf',
+            'http://7tsy1x.com1.z0.glb.clouddn.com/Perhaps Love.mp3',
+            'http://7tsy1x.com1.z0.glb.clouddn.com/next to you.mp3',
+            'http://7tsy1x.com1.z0.glb.clouddn.com/Last Dream.mp3'
           ];
         var index = Math.floor(Math.random(0, 1)  * src.length);
-        $('body').append('<embed width="0" height="0" loop="true" src="' + src[index] + '"/>');
+        $('body').append('<embed width="0" height="0" src="' + src[index] + '"/>');
+
 
         function animateBar($item,noAni){
             var spanLeft = $item.find('span').offset().left;
             var conLeft = $item.parent().offset().left;
             var left = spanLeft - conLeft;
-            var width = $item.find('span').width() + 8;
+            var width = $item.find('span').width() + 7;
 
             if(noAni){
                 $('#cateBar').css({left:left,width:width})

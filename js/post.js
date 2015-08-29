@@ -23,14 +23,14 @@ $(document).ready(function(){
 
     $('pre').addClass('prettyprint linenums'); //添加Google code Hight需要的class
 
-   
-    window.disqus_shortname = 'alankell'; // required: replace example with your forum shortname
-    $('#disqus_container .comment').on('click',function(){
-        $(this).html('加载中...');
-        var that = this;
-        $.getScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()});
-    });
-   
+
+    // window.disqus_shortname = 'alankell'; // required: replace example with your forum shortname
+    // $('#disqus_container .comment').on('click',function(){
+    //     $(this).html('加载中...');
+    //     var that = this;
+    //     $.getScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()});
+    // });
+
     $('.entry a').each(function(index,element){
         var href = $(this).attr('href');
         if(href){
@@ -134,7 +134,7 @@ $(document).ready(function(){
             $(window).load(function(){
                 var scrollTop = [];
                 $.each($('#menuIndex li a'),function(index,item){
-                    var selector = $(item).attr('data-id') ? '#'+$(item).attr('data-id') : 'h1'
+                    var selector = $(item).attr('data-id') ? '#'+$(item).attr('data-id') : 'h2'
                     var top = $(selector).offset().top;
                     scrollTop.push(top);
                 });
@@ -201,9 +201,9 @@ $(document).ready(function(){
         prettyPrint();
     });
 
-    if(/\#comment/.test(location.hash)){
-        $('#disqus_container .comment').trigger('click');
-    }
+    // if(/\#comment/.test(location.hash)){
+    //     $('#disqus_container .comment').trigger('click');
+    // }
 
     if(/css3-animation/.test(location.href)){
         $("head").append("<link rel='stylesheet' type='text/css' href='/css/css3-ani.css'/>");

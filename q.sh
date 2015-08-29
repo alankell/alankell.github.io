@@ -1,5 +1,5 @@
 #!/bin/sh 
 git add -A
 git commit -m "quick push for test"
-git push origin master
+git push origin gitcafe-pages
 

@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <link href="http://rockdai.u.qiniudn.com/font.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
   <script src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
   <style>
     body {
@@ -27,7 +26,6 @@
       text-align: center;
       /*display: none;*/
     }
-
     #title a {
       text-decoration: none;
       margin: 0 auto;
@@ -56,16 +54,14 @@
       memberNum = 1;
       img = new Image();
       memberList = [
-        {'nick': 'Autumn', 'link': 'http://weibo.com/qiuwuhen'},
-        {'nick': '小豆的妹妹', 'link': ''},
-        {'nick': 'Fanny', 'link': ''}];
+        {'nick': '小豆的妹妹', 'link': ''}];
 
       context.textAlign = "center";
       context.textBaseline = "middle";
       context.font = '180px "Open Sans"';
       // context.fillStyle = "white";
       // context.fill();
-      context.fillText("请吃饭啦" , canvas.width/2 , canvas.height/2);
+      context.fillText("新年快乐" , canvas.width/2 , canvas.height/2);
       var dots = getimgData();
       var pause = false;
       initAnimate();
@@ -147,7 +143,7 @@
           $("#title").html(str);
           $("#title").show();
           img.src = "images/member" + memberNum + ".png";
-          memberNum = memberNum >= 3 ? 1 : memberNum + 1;
+          memberNum = memberNum >= 1 ? 1 : memberNum + 1;
           derection = true;
           pause = false;
           if (img.complete) {
@@ -221,7 +217,7 @@
     }
 
   </script>
-  <title>请吃饭啦</title>
+  <title>新年快乐</title>
 </head>
 <body>
   <div>
@@ -230,8 +226,6 @@
   <div id='title'></div>
   <div style="display:none">
     <img src="./images/member1.png" alt="" />
-    <img src="./images/member2.png" alt="" />
-    <img src="./images/member3.png" alt="" />
   </div>
 </body>
 </html>

@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>等高布局</title>
+    <style>
+    .wrap {
+        width: 900px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .left {
+        width: 200px;
+        background: red;
+        float: left;
+        padding-bottom: 10000px;
+        margin-bottom: -10000px;
+    }
+    .right {
+        width: 700px;
+        background: yellow;
+        float: right;
+        padding-bottom: 10000px;
+        margin-bottom: -10000px;
+    }
+
+    .flex-wrap{
+        width: 900px;
+        margin: 10px auto;
+        display: flex;
+        align-items: stretch;
+    }
+    .flex-left{
+        width: 200px;
+        background: red;
+        float: left;
+    }
+    .flex-right{
+        width: 700px;
+        background: yellow;
+        float: right;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="left">
+            页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/>
+        </div>
+        <div class="right">
+            页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/>
+        </div>
+    </div>
+<div class="flex-wrap">
+    <div class="flex-left">
+        页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/>
+    </div>
+     <div class="flex-right">
+            页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/> 页面内容
+            <br/>
+        </div>
+</div>
+</body>
+</html>

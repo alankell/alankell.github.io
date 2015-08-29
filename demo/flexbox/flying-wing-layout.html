@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>双飞翼布局</title>
+</head>
+<body>
+<style type="text/css">
+*{font-size: 15px;color: gray;}
+.flex-wrap{
+  box-shadow: 0 0 5px #ccc;
+  padding: 8px 0 8px 0;
+  border-radius: 5px;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-left{
+  text-align: right;
+  padding-left: 10px;
+  line-height: 30px;
+  }
+.flex-right{
+  padding-right: 10px;
+  text-align: right;
+  line-height: 30px;
+  }
+.flex-center {
+    -webkit-flex: 1;
+    flex: 1;
+    border: none;
+    outline: none;
+    line-height: 30px;
+    margin-left: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+</style>
+<div class="flex-wrap">
+<label class="flex-left">用户名:</label>
+<input class="flex-center" type="text" />
+<label class="flex-right">(2-20个汉字)</label>
+</div>
+<style>
+.wrap {
+  margin-top: 20px;
+  padding: 8px 0 8px 0;
+  box-shadow: 0 0 5px #ccc;
+  border-radius: 5px;
+}
+.left {
+  width: 50px;
+  padding-left: 10px;
+  float: left;
+  line-height: 30px;
+  text-align: right;
+}
+.right {
+  width: 90px;
+  padding-right: 10px;
+  float: right;
+  line-height: 30px;
+  text-align: right;
+}
+.center {
+  overflow: hidden;
+}
+.center div input {
+  height: 30px;
+  margin-left: 10px;
+  padding: 0 4px 2px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none
+}
+</style>
+<div class="wrap">
+        <div class="left">用户名:</div>
+        <div class="right">(2-20 个汉字)</div>
+        <div class="center">
+            <div style="overflow:hidden;width:100%;">
+                <input type="text" style="width:100%" value="" />
+            </div>
+            <!-- for ie -->
+            <span style="float:right; font-size:0; ">&nbsp;</span>
+        </div>
+        <div style="clear:both;font-size:0">&nbsp;</div>
+    </div>
+</body>
+</html>

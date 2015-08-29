@@ -18,25 +18,24 @@
 <body>
     <div class="home-menu">
         <div class="home-icon-con">
-            <a class="home-menu-icon" href="/">秋无痕</a>
+            <a class="home-menu-icon" href="/">&nbsp;汐辰&nbsp;</a>
             <a class="home-follow" href="#" title="Contact Me">+</a>
         </div>
         <div class="home-contact">
             <a href="http://weibo.com/734521347" target="_blank" style="margin-left:-5px;"><img src="http://www.weibo.com/favicon.ico" alt="" width="25"/></a>
             <a href="http://www.douban.com/people/qiuwuhen/" target="_blank" style="text-align:center;"><img src="http://www.douban.com/favicon.ico" alt="" width="22"/></a>
-            
+
         </div>
-      
-    </div>    
+
+    </div>
 
     {{ content }}
 
    <a href="https://github.com/alankell/" id="fork">
     <img alt="Fork me on GitHub" src="http://pic.yupoo.com/qiuwuhen/DJwasoYM/fbWJL.png">
    </a>
-        <script>
-        
-      $('a').hover(function(){$(this).addClass('hover-shadow');},
+<script type="text/javascript">
+    $('a').hover(function(){$(this).addClass('hover-shadow');},
         function(){$(this).removeClass("hover-shadow");});
       $('a').click(function () {
       var redirect = $(this).attr('href');
@@ -47,19 +46,18 @@
         return true;
         });
 
-        </script>   
-    <script type="text/javascript">
-        $(function(){
-            $('.home-follow').click(function(e){
-                e.preventDefault();
-
-                if($('.home-contact').is(':visible')){
-                    $('.home-contact').slideUp(100);
-                }else{
-                    $('.home-contact').slideDown(100);
-                }
-            });
-     });
-    </script>
+    $(function(){
+        $('.home-follow').click(function(e){
+            e.preventDefault();
+            if($('.home-contact').is(':visible')){
+                $('.home-follow').text('+');
+                $('.home-contact').slideUp(100);
+            }else{
+                $('.home-follow').text('-');
+                $('.home-contact').slideDown(100);
+            }
+        });
+    });
+</script>
 </body>
 </html>
