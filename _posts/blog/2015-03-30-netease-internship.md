@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "网易实习总结"
-description: "netease intership summary"
+description: "netease internship summary"
 category: "blog"
 tags: [实习,梦想,生活,前端,总结]
 ---

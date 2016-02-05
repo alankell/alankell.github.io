@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "百度实习总结"
-description: "baidu intership summary"
+description: "baidu internship summary"
 category: "blog"
 tags: [实习，梦想，生活，前端，总结]
 ---

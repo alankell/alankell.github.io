@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "阿里实习总结"
-description: "alibaba intership summary"
+description: "alibaba internship summary"
 category: "blog"
 tags: [实习,梦想,生活,前端,总结]
 ---
