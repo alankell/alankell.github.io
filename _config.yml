@@ -6,7 +6,7 @@ paginate: 8
 permalink: /:title
 
 title: Alan's World
-url: http://autumnme.com
+url: http://alankell.github.io
 feed: /atom.xml
-author_info: <a href="http://autumnme.com/">Alan</a>
-production_url : http://autumnme.com
+author_info: <a href="http://alankell.github.io/">Alan</a>
+production_url : http://alankell.github.io
